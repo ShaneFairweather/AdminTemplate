@@ -1,0 +1,100 @@
+.chat {
+  .row {
+    .col-md-4 {
+      padding-right: 0;
+    }
+  }
+  &__contacts {
+  }
+  &__contact {
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid $card-border;
+    cursor: pointer;
+    transition: .1s ease-in-out;
+    &:hover {
+      background-color: rgba(255,255,255,.0825);
+    }
+    &__avatar {
+      img {
+        height: 3.9rem;
+        width: 3.9rem;
+        margin-right: 1rem;
+      }
+    }
+    &__text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      font-weight: 200;
+      font-size: 1.3rem;
+    }
+    &__name {
+      color: white;
+    }
+    &__status {
+      color: $text-alt;
+    }
+  }
+  &__body {
+    padding: 2rem;
+  }
+  &__messages {
+    justify-content: space-between;
+  }
+  &__message {
+    display: flex;
+    padding: 1rem 0;
+    align-items: center;
+    justify-content: space-between;
+    &__avatar {
+      img {
+        height: 3.4rem;
+        width: 3.4rem;
+        margin-right: 1rem;
+      }
+      &--from-you {
+        img {
+          margin-right: 0;
+          margin-left: 1rem;
+        }
+      }
+    }
+    &__author {
+
+    }
+    &__text {
+      background-color: rgba(255,255,255,.1);
+      padding: 1rem;
+      border-radius: 6px;
+      font-size: 1.3rem;
+      &--from-you {
+        background-color: rgba(255,255,255,.8);
+        color: #333333;
+      }
+    }
+    &__main {
+      display: flex;
+      width: 90%;
+      justify-content: flex-start;
+      &--from-you {
+        display: flex;
+        flex-direction: row-reverse;
+      }
+    }
+  }
+  &__input {
+    margin-top: 2rem;
+    width: 100%;
+    background: rgba(0,0,0,.1);
+    box-shadow: none;
+    border: none;
+    font-size: 1.4rem;
+    color: white;
+    padding: 1rem;
+    &:focus {
+      box-shadow: none;
+    }
+  }
+}
