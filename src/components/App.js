@@ -8,6 +8,8 @@ import Grid from './Grid';
 import Gallery from './Gallery';
 import TodoList from './TodoList';
 import Chat from './Chat';
+import BlogPosts from './BlogPosts';
+import BlogDetail from './BlogDetail';
 import { BrowserRouter, Route } from 'react-router-dom';
 import '../assets/styles/styles.css'
 
@@ -27,6 +29,8 @@ class App extends Component {
                                 <Route path="/gallery" component={Gallery} />
                                 <Route path="/todo-list" component={TodoList} />
                                 <Route path="/chat" component={Chat} />
+                                <Route exact path="/blog" component={BlogPosts} />
+                                <Route exact path="/blog/:id" component={BlogDetail} />
                             </div>
                             <Footer/>
                         </div>

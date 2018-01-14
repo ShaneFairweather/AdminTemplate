@@ -5,7 +5,7 @@ import ChatContact from './ChatContact';
 const ChatContactsList = (props) => {
     const renderContacts = () => {
         return props.contacts.map((contact) => {
-            return <ChatContact key={contact.id} contact={contact} />
+            return <ChatContact selectActiveContact={props.selectActiveContact} key={contact.id} contact={contact} />
         });
     };
 

@@ -3,7 +3,7 @@ import React from 'react';
 const ChatContact = (props) => {
     const { name, status, avatar } = props.contact;
     return (
-        <div className="chat__contact">
+        <div onClick={() => props.selectActiveContact(name)} className="chat__contact">
             <div className="chat__contact__avatar">
                 <img src={avatar} alt={name} />
             </div>

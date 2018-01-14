@@ -67,6 +67,22 @@ body {
     .toolbar__icons i:last-child {
       padding-right: 0; }
 
+*::-webkit-scrollbar {
+  width: .4em;
+  height: 1em; }
+
+*::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.3);
+  outline: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 10px; }
+
+::-webkit-scrollbar:horizontal {
+  width: 1rem;
+  border-radius: 50%; }
+
+::-webkit-scrollbar-thumb:horizontal {
+  width: 1rem; }
+
 .header {
   height: 6.8rem;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
@@ -165,7 +181,6 @@ body {
   .gallery__images .row > * {
     padding: 0;
     margin: 0; }
-
 .gallery__image-container {
   height: 100%;
   border: 4px solid transparent;
@@ -200,7 +215,6 @@ body {
   justify-content: space-between;
   padding: 2rem;
   border-bottom: 1px solid rgba(0, 0, 0, 0.3); }
-
 .todo-list__content {
   display: flex;
   color: white;
@@ -208,10 +222,8 @@ body {
   font-size: 1.2rem;
   font-weight: 300;
   cursor: pointer; }
-
 .todo-list__time {
   color: rgba(255, 255, 255, 0.7); }
-
 .todo-list__checkbox {
   height: 2.5rem;
   width: 2.5rem;
@@ -225,13 +237,11 @@ body {
   .todo-list__checkbox i {
     opacity: 0;
     font-size: 2.7rem; }
-
 .todo-list__controls {
   color: white;
   position: relative;
   cursor: pointer;
   font-size: 1.5rem; }
-
 .todo-list__menu {
   position: absolute;
   background-color: black;
@@ -250,16 +260,12 @@ body {
     padding: .3rem 1rem; }
     .todo-list__menu div:hover {
       background-color: #202020; }
-
 .todo-list .visible {
   opacity: 1; }
-
 .todo-list .completed--text {
   text-decoration: line-through; }
-
 .todo-list .completed--checkbox i {
   opacity: 1; }
-
 .todo-list__add {
   color: white;
   padding: 2rem;
@@ -267,7 +273,6 @@ body {
   .todo-list__add__header {
     font-size: 1.8rem;
     margin-bottom: 2rem; }
-
 .todo-list__textarea {
   background-color: rgba(0, 0, 0, 0.1) !important;
   border: none !important;
@@ -276,7 +281,6 @@ body {
   .todo-list__textarea:focus {
     box-shadow: none !important;
     border-bottom: 1px solid #3a8fc8 !important; }
-
 .todo-list__time-select {
   display: flex;
   align-items: center;
@@ -301,7 +305,6 @@ body {
     .todo-list__time-select input:focus {
       box-shadow: none !important;
       border-bottom: 1px solid #3a8fc8 !important; }
-
 .todo-list__submit {
   margin-top: 1.5rem;
   background-color: rgba(0, 0, 0, 0.3) !important;
@@ -317,7 +320,13 @@ body {
 
 .chat .row .col-md-4 {
   padding-right: 0; }
-
+.chat__list {
+  overflow: hidden;
+  overflow-y: auto; }
+.chat__contacts {
+  height: 484px;
+  overflow: hidden;
+  overflow-y: auto; }
 .chat__contact {
   padding: 2rem;
   display: flex;
@@ -341,13 +350,13 @@ body {
     color: white; }
   .chat__contact__status {
     color: rgba(255, 255, 255, 0.7); }
-
 .chat__body {
   padding: 2rem; }
-
 .chat__messages {
-  justify-content: space-between; }
-
+  justify-content: space-between;
+  height: 320px;
+  overflow: hidden;
+  overflow-y: auto; }
 .chat__message {
   display: flex;
   padding: 1rem 0;
@@ -371,11 +380,12 @@ body {
   .chat__message__main {
     display: flex;
     width: 90%;
-    justify-content: flex-start; }
+    justify-content: flex-start;
+    max-height: 520px;
+    overflow-y: auto; }
     .chat__message__main--from-you {
       display: flex;
       flex-direction: row-reverse; }
-
 .chat__input {
   margin-top: 2rem;
   width: 100%;
@@ -387,3 +397,105 @@ body {
   padding: 1rem; }
   .chat__input:focus {
     box-shadow: none; }
+
+.blog-post {
+  border: 5px solid red;
+  margin-bottom: 2.5rem; }
+  .blog-post__image img {
+    height: auto;
+    width: 100%;
+    max-height: 340px; }
+  .blog-post__content {
+    padding: 2rem;
+    font-weight: 200; }
+  .blog-post__info {
+    margin-bottom: 2rem; }
+  .blog-post__title {
+    font-size: 2rem;
+    font-weight: 300; }
+  .blog-post__author {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 1.2rem;
+    letter-spacing: .1px; }
+  .blog-post__text {
+    margin-bottom: 2rem;
+    font-size: 1.4rem;
+    white-space: pre-wrap; }
+  .blog-post__button {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    cursor: pointer; }
+    .blog-post__button a {
+      color: white;
+      text-decoration: none;
+      transition: .1s ease-in-out; }
+      .blog-post__button a:hover {
+        color: #3a8fc8;
+        text-decoration: none; }
+  .blog-post__user {
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .blog-post__user__author {
+      font-size: 1.6rem; }
+      .blog-post__user__author__info {
+        margin-top: .5rem;
+        text-align: center;
+        color: rgba(255, 255, 255, 0.7);
+        font-size: 1.2rem; }
+    .blog-post__user__icons {
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      display: flex;
+      justify-content: space-around; }
+      .blog-post__user__icons i {
+        background-color: rgba(255, 255, 255, 0.2);
+        padding: 1.2rem 1.3rem;
+        border-radius: 50%;
+        font-size: 1.4rem;
+        margin-right: .6rem;
+        cursor: pointer; }
+        .blog-post__user__icons i:first-child {
+          padding: 1.2rem 1.5rem; }
+        .blog-post__user__icons i:last-child {
+          margin-right: 0; }
+        .blog-post__user__icons i:hover {
+          background-color: rgba(255, 255, 255, 0.35);
+          transition: all .2s ease-in-out; }
+  .blog-post__avatar img {
+    height: 7rem;
+    width: 7rem;
+    margin-bottom: 1rem; }
+
+.blog-side__header {
+  font-weight: 300;
+  font-size: 1.6rem; }
+.blog-side__post {
+  display: flex;
+  padding: 2rem;
+  cursor: pointer;
+  transition: all .2s ease-in-out;
+  background-color: rgba(0, 0, 0, 0.1); }
+  .blog-side__post:hover {
+    background-color: rgba(255, 255, 255, 0.0825); }
+.blog-side__avatar img {
+  height: 4rem;
+  width: 4rem;
+  margin-right: 1rem; }
+.blog-side__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-weight: 200; }
+.blog-side__title {
+  font-size: 1.4rem;
+  font-weight: 300; }
+.blog-side__author {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 1.3rem; }
+
+/*# sourceMappingURL=styles.css.map */
