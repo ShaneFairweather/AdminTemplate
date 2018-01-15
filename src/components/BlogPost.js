@@ -57,7 +57,7 @@ const BlogPost = (props) => {
                         </div>
                     </div>
                     <div className="blog-post__main">
-                        <div className="blog-post__text">{text}</div>
+                        <div className="blog-post__text">{text.slice(0, 350) + "..."}</div>
                         <div className="blog-post__button">
                             {/*<Link to="/blog-detail">Read More...</Link>*/}
                             <Link to={{

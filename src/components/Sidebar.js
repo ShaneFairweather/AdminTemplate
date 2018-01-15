@@ -18,8 +18,13 @@ const Sidebar = () => {
                 <li className="sidebar__item"><Link to="/"><i className="fa fa-tachometer" aria-hidden="true" />
                     Dashboard</Link></li>
                 <li className="sidebar__item sidebar__item--dropdown"><i className="fa fa-envelope" aria-hidden="true" />Mailbox</li>
+                <ul className="sidebar__dropdown">
+                    <li className="sidebar__dropdown__item"><Link to="/mailbox/inbox">Inbox</Link></li>
+                    <li className="sidebar__dropdown__item"><Link to="/mailbox/mail">Mail</Link></li>
+                    <li className="sidebar__dropdown__item"><Link to="/mailbox/compose">Compose</Link></li>
+                </ul>
                 <li className="sidebar__item"><Link to="/gallery"><i className="fa fa-picture-o" aria-hidden="true" />Gallery</Link></li>
-                <li className="sidebar__item sidebar__item--dropdown"><i className="fa fa-list-alt" aria-hidden="true" />Blog</li>
+                <li className="sidebar__item"><Link to="/blog"><i className="fa fa-list-alt" aria-hidden="true" />Blog</Link></li>
                 <li className="sidebar__item"><Link to="/chat"><i className="fa fa-comments" aria-hidden="true" />Chat</Link></li>
                 <li className="sidebar__item sidebar__item--dropdown"><i className="fa fa-cog" aria-hidden="true" />Components</li>
                 <li className="sidebar__item sidebar__item--dropdown"><i className="fa fa-bar-chart" aria-hidden="true" />Charts</li>

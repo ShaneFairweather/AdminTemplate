@@ -24,7 +24,7 @@ const blogPosts = [
         author: "Mihael Keehl",
         image: Mountains,
         date: "December 29th, 2017",
-        text: "Vestibulum morbi blandit cursus risus at. Nam aliquam sem et tortor consequat. Aliquam sem fringilla ut morbi. Sed elementum tempus egestas sed sed. Neque egestas congue quisque egestas diam in arcu. Sit amet risus nullam eget felis eget nunc.",
+        text: "Dui accumsan sit amet nulla facilisi. Quis lectus nulla at volutpat diam ut venenatis tellus. Nulla facilisi cras fermentum odio. Ac turpis egestas sed tempus urna et. Sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus. Varius morbi enim nunc faucibus a pellentesque. Condimentum lacinia quis vel eros donec ac. Arcu felis bibendum ut tristique et egestas. Non arcu risus quis varius quam quisque. Nec ultrices dui sapien eget. Ultrices gravida dictum fusce ut placerat orci. Sed viverra ipsum nunc aliquet bibendum enim. \n\n Ullamcorper velit sed ullamcorper morbi tincidunt ornare. In ornare quam viverra orci sagittis eu volutpat. Enim ut sem viverra aliquet eget sit amet. Augue lacus viverra vitae congue. Nibh venenatis cras sed felis. Leo in vitae turpis massa.",
         avatar: Mihael,
         id: 1002
     },
@@ -33,7 +33,7 @@ const blogPosts = [
         author: "Rollo Tomasi",
         image: Waves,
         date: "December 27th, 2017",
-        text: "Vestibulum morbi blandit cursus risus at. Nam aliquam sem et tortor consequat. Aliquam sem fringilla ut morbi. Sed elementum tempus egestas sed sed. Neque egestas congue quisque egestas diam in arcu. Sit amet risus nullam eget felis eget nunc.",
+        text: "Ullamcorper malesuada proin libero nunc consequat interdum. Maecenas accumsan lacus vel facilisis. Quis hendrerit dolor magna eget est. Vulputate mi sit amet mauris commodo quis. A iaculis at erat pellentesque adipiscing commodo elit. Imperdiet nulla malesuada pellentesque elit eget. \n\n Lectus urna duis convallis convallis tellus id. Risus in hendrerit gravida rutrum quisque non tellus orci. Adipiscing elit duis tristique sollicitudin nibh sit. \n\n Quis imperdiet massa tincidunt nunc. Amet est placerat in egestas. Urna molestie at elementum eu facilisis sed. Gravida dictum fusce ut placerat. Sed libero enim sed faucibus turpis in eu mi bibendum. Luctus accumsan tortor posuere ac ut consequat.",
         avatar: Rollo,
         id: 1003
     }

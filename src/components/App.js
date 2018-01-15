@@ -4,6 +4,8 @@ import Sidebar from './Sidebar';
 import Footer from './Footer';
 import Dashboard from './Dashboard';
 import MailboxInbox from './MailboxInbox';
+import MailboxCompose from './MailboxCompose';
+import MailboxMail from './MailboxMail';
 import Grid from './Grid';
 import Gallery from './Gallery';
 import TodoList from './TodoList';
@@ -24,13 +26,15 @@ class App extends Component {
                         <div className="content">
                             <div className="content__inner">
                                 <Route exact path="/" component={Dashboard} />
-                                <Route path="/mailbox/inbox" component={MailboxInbox} />
                                 <Route path="/grid" component={Grid} />
                                 <Route path="/gallery" component={Gallery} />
                                 <Route path="/todo-list" component={TodoList} />
                                 <Route path="/chat" component={Chat} />
                                 <Route exact path="/blog" component={BlogPosts} />
                                 <Route exact path="/blog/:id" component={BlogDetail} />
+                                <Route path="/mailbox/inbox" component={MailboxInbox} />
+                                <Route exact path="/mailbox/compose" component={MailboxCompose} />
+                                <Route exact path="/mailbox/mail" component={MailboxMail} />
                             </div>
                             <Footer/>
                         </div>

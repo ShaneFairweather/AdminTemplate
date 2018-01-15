@@ -1,0 +1,73 @@
+.inbox {
+  &__header {
+    background-color: $card;
+    &__avatar {
+      img {
+        height: 3rem;
+        width: 3rem;
+      }
+    }
+    &__info {
+      display: flex;
+    }
+  }
+  &__main {
+    display: flex;
+    flex-direction: row;
+  }
+  &__content {
+    flex: 1;
+    //display: flex;
+    //align-items: center;
+  }
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    border-bottom: 1px solid $card-border;
+    &__main {
+      display: flex;
+      align-items: center;
+    }
+    &__avatar {
+      img {
+        height: 4rem;
+        width: 4rem;
+        margin-right: 1rem;
+      }
+    }
+    &__info {
+
+    }
+    &__name {
+      font-size: 1.4rem;
+    }
+    &__header {
+      font-size: 1.2rem;
+      color: $text-alt;
+    }
+  }
+
+  &__sidebar {
+    flex: 0 0 200px;
+    background-color: rgba(0,0,0,.065);
+    padding: 1rem;
+    &__subheader {
+      padding: 1rem;
+      text-transform: uppercase;
+    }
+    &__item {
+      color: $text-alt;
+      padding: 1rem;
+      font-size: 1.3rem;
+      cursor: pointer;
+      i {
+        margin-right: 1rem;
+      }
+      &:hover {
+        background-color: $highlight;
+      }
+    }
+  }
+}

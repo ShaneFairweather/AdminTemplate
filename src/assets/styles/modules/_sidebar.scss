@@ -59,4 +59,23 @@
       }
     }
   }
+  &__dropdown {
+    background-color: $card;
+    list-style: none;
+    &__item {
+      a {
+        display: block;
+        padding: 1rem 1rem 1rem 4rem;
+        font-size: 1.4rem;
+        font-weight: 300;
+        text-decoration: none;
+        color: $text-alt;
+        &:hover {
+          background-color: $highlight;
+          text-decoration: none;
+          color: $text-alt;
+        }
+      }
+    }
+  }
 }
