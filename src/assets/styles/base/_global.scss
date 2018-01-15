@@ -110,3 +110,52 @@ body {
   //border-radius: 10px;
   width: 1rem;
 }
+
+
+.form-control {
+  border-radius: 2px;
+  box-shadow: none;
+  background-color: rgba(0, 0, 0, .1) !important;
+  color: white !important;
+  width: 100%;
+  position: relative;
+  display: inline-block;
+  padding: 4px 7px;
+  height: 28px;
+  cursor: text;
+  font-size: 12px;
+  line-height: 1.5;
+  background-image: none;
+  //border: 1px solid #d9d9d9
+  border: none !important;
+  border-bottom: 1px solid $text-alt !important;
+  &:focus {
+    box-shadow: none !important;
+    border-bottom: 1px solid $light-blue !important;
+  }
+}
+
+
+.btn {
+  margin-top: 1.5rem;
+  background-color: rgba(0, 0, 0, .4) !important;
+  padding: .6rem 1.4rem !important;
+  color: white;
+  font-size: 1.4rem !important;
+  font-weight: 300;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all .2s ease-in-out;
+  cursor: pointer;
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.1) !important;
+    transition: all .2s ease-in-out;
+  }
+  &--outline {
+    border: 1px solid white;
+    color: white;
+  }
+  &--outline-blue {
+    border: 1px solid $light-blue !important;
+    color: $light-blue;
+  }
+}

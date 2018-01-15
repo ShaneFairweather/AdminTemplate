@@ -3,6 +3,7 @@ import { Container, Row, Col } from 'reactstrap';
 import MailboxItem from './MailboxItem';
 import mailboxItems from '../data/mailboxItems';
 import You from '../assets/images/avatars/user-19.png';
+import { Link } from 'react-router-dom';
 
 
 const MailboxInbox = () => {
@@ -18,8 +19,21 @@ const MailboxInbox = () => {
                 <Col xs="12">
                     <div className="inbox card">
                         <div className="card__header inbox__header">
-                            <div className="card__icons card__icons--left">
-
+                            <div className="card__icons card__icons--left inbox__icons">
+                                <div className="inbox__icons__compose">
+                                    <Link to="/mailbox/compose">
+                                        <i className="fa fa-pencil-square-o"/>
+                                    </Link>
+                                </div>
+                                <div className="inbox__icons__group">
+                                    <i className="fa fa-reply"/>
+                                    <i className="fa fa-reply-all"/>
+                                    <i className="fa fa-share"/>
+                                </div>
+                                <div className="inbox__icons__group">
+                                    <i className="fa fa-exclamation"/>
+                                    <i className="fa fa-trash-o"/>
+                                </div>
                             </div>
                             <div className="inbox__header__info">
                                 <div className="inbox__header__avatar">

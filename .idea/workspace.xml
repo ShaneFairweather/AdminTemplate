@@ -2,23 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e01768e2-b0ef-4b95-ac5b-916cc94253f6" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/assets/styles/modules/_mailbox-compose.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/assets/styles/modules/_mailbox-inbox.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/assets/styles/modules/_mailbox-mail.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/MailboxItem.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/data/mailboxItems.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/MailboxComposeInner.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/assets/styles/modules/_sidebar.scss" afterPath="$PROJECT_DIR$/src/assets/styles/modules/_sidebar.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/assets/styles/base/_global.scss" afterPath="$PROJECT_DIR$/src/assets/styles/base/_global.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/assets/styles/base/_variables.scss" afterPath="$PROJECT_DIR$/src/assets/styles/base/_variables.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/assets/styles/modules/_mailbox-compose.scss" afterPath="$PROJECT_DIR$/src/assets/styles/modules/_mailbox-compose.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/assets/styles/modules/_mailbox-inbox.scss" afterPath="$PROJECT_DIR$/src/assets/styles/modules/_mailbox-inbox.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/assets/styles/modules/_todo-list.scss" afterPath="$PROJECT_DIR$/src/assets/styles/modules/_todo-list.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/assets/styles/styles.css" afterPath="$PROJECT_DIR$/src/assets/styles/styles.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/assets/styles/styles.css.map" afterPath="$PROJECT_DIR$/src/assets/styles/styles.css.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/assets/styles/styles.scss" afterPath="$PROJECT_DIR$/src/assets/styles/styles.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/App.js" afterPath="$PROJECT_DIR$/src/components/App.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/BlogPost.js" afterPath="$PROJECT_DIR$/src/components/BlogPost.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/MailboxCompose.js" afterPath="$PROJECT_DIR$/src/components/MailboxCompose.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/MailboxInbox.js" afterPath="$PROJECT_DIR$/src/components/MailboxInbox.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/MailboxMail.js" afterPath="$PROJECT_DIR$/src/components/MailboxMail.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Sidebar.js" afterPath="$PROJECT_DIR$/src/components/Sidebar.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/data/blogPosts.js" afterPath="$PROJECT_DIR$/src/data/blogPosts.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -32,112 +27,75 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="App.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/App.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="34" column="84" lean-forward="false" selection-start-line="34" selection-start-column="84" selection-end-line="34" selection-end-column="84" />
-              <folding>
-                <element signature="e#0#41#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Sidebar.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/Sidebar.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="19" column="133" lean-forward="true" selection-start-line="19" selection-start-column="133" selection-end-line="19" selection-end-column="133" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_sidebar.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/assets/styles/modules/_sidebar.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-755">
-              <caret line="5" column="16" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MailboxMail.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/MailboxMail.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="26" lean-forward="true" selection-start-line="0" selection-start-column="26" selection-end-line="0" selection-end-column="26" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_mailbox-inbox.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/assets/styles/modules/_mailbox-inbox.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="141">
-              <caret line="53" column="36" lean-forward="false" selection-start-line="53" selection-start-column="36" selection-end-line="53" selection-end-column="36" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="blogPosts.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/data/blogPosts.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-435">
-              <caret line="11" column="19" lean-forward="true" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
-              <folding>
-                <element signature="e#0#58#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MailboxInbox.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/MailboxInbox.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="84">
-              <caret line="14" column="12" lean-forward="true" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MailboxItem.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/MailboxItem.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="3" lean-forward="false" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="mailboxItems.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/data/mailboxItems.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="69">
-              <caret line="35" column="25" lean-forward="false" selection-start-line="35" selection-start-column="25" selection-end-line="35" selection-end-column="25" />
-              <folding>
-                <element signature="e#0#56#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="MailboxCompose.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/MailboxCompose.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="30" lean-forward="true" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="30" />
+            <state relative-caret-position="990">
+              <caret line="66" column="54" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="76" selection-end-column="30" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MailboxMail.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/components/MailboxMail.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="1" column="98" lean-forward="false" selection-start-line="1" selection-start-column="98" selection-end-line="1" selection-end-column="98" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MailboxComposeInner.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/MailboxComposeInner.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="305">
+              <caret line="29" column="73" lean-forward="false" selection-start-line="29" selection-start-column="73" selection-end-line="29" selection-end-column="73" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_mailbox-compose.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/assets/styles/modules/_mailbox-compose.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="206">
+              <caret line="39" column="18" lean-forward="false" selection-start-line="39" selection-start-column="18" selection-end-line="39" selection-end-column="18" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_global.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/assets/styles/base/_global.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="311">
+              <caret line="149" column="45" lean-forward="false" selection-start-line="149" selection-start-column="45" selection-end-line="149" selection-end-column="45" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TodoAdd.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/TodoAdd.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-814">
+              <caret line="2" column="18" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+              <folding>
+                <marker date="1515859221000" expanded="true" signature="2002:3219" ph="..." />
+                <marker date="1515859221000" expanded="true" signature="2130:3196" ph="..." />
+                <marker date="1515859221000" expanded="true" signature="2166:2403" ph="..." />
+                <marker date="1515859221000" expanded="true" signature="2468:3117" ph="..." />
+                <marker date="1515859221000" expanded="true" signature="2509:2668" ph="..." />
+                <marker date="1515859221000" expanded="false" signature="2698:2704" ph=" " />
+                <marker date="1515859221000" expanded="false" signature="2708:2714" ph=" " />
+                <marker date="1515859221000" expanded="true" signature="2754:3086" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -153,9 +111,12 @@
       <find>popular</find>
       <find>blog</find>
       <find>mailbox</find>
-      <find>content</find>
       <find>main</find>
       <find>sidebar</find>
+      <find>compo</find>
+      <find>content</find>
+      <find>body</find>
+      <find>input</find>
     </findStrings>
     <replaceStrings>
       <replace>side</replace>
@@ -167,8 +128,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/App.js" />
-        <option value="$PROJECT_DIR$/src/components/Footer.js" />
         <option value="$PROJECT_DIR$/src/components/Header.js" />
         <option value="$PROJECT_DIR$/src/components/Dashboard.js" />
         <option value="$PROJECT_DIR$/src/components/Mailbox.js" />
@@ -182,7 +141,6 @@
         <option value="$PROJECT_DIR$/src/components/TodoItem.js" />
         <option value="$PROJECT_DIR$/src/components/TodoAdd.js" />
         <option value="$PROJECT_DIR$/src/components/TodoList.js" />
-        <option value="$PROJECT_DIR$/src/assets/styles/modules/_todo-list.scss" />
         <option value="$PROJECT_DIR$/src/assets/styles/modules/_card.scss" />
         <option value="$PROJECT_DIR$/src/components/ChatContacts.js" />
         <option value="$PROJECT_DIR$/src/components/chatContact.js" />
@@ -192,7 +150,6 @@
         <option value="$PROJECT_DIR$/src/components/ChatContactsList.js" />
         <option value="$PROJECT_DIR$/src/components/ChatContact.js" />
         <option value="$PROJECT_DIR$/src/components/ChatBody.js" />
-        <option value="$PROJECT_DIR$/src/assets/styles/base/_global.scss" />
         <option value="$PROJECT_DIR$/src/components/Chat.js" />
         <option value="$PROJECT_DIR$/src/data/contacts.js" />
         <option value="$PROJECT_DIR$/src/components/BlogPopular.js" />
@@ -200,7 +157,6 @@
         <option value="$PROJECT_DIR$/src/components/BlogSidePost.js" />
         <option value="$PROJECT_DIR$/src/components/BlogSidePosts.js" />
         <option value="$PROJECT_DIR$/src/assets/styles/modules/_chat.scss" />
-        <option value="$PROJECT_DIR$/src/assets/styles/base/_variables.scss" />
         <option value="$PROJECT_DIR$/src/assets/styles/modules/_blog-side.scss" />
         <option value="$PROJECT_DIR$/src/components/BlogPosts.js" />
         <option value="$PROJECT_DIR$/src/data/sidePosts.js" />
@@ -210,14 +166,19 @@
         <option value="$PROJECT_DIR$/src/components/BlogPost.js" />
         <option value="$PROJECT_DIR$/src/components/Sidebar.js" />
         <option value="$PROJECT_DIR$/src/assets/styles/modules/_sidebar.scss" />
-        <option value="$PROJECT_DIR$/src/components/MailboxMail.js" />
-        <option value="$PROJECT_DIR$/src/components/MailboxCompose.js" />
         <option value="$PROJECT_DIR$/src/components/MailboxItem.js" />
         <option value="$PROJECT_DIR$/src/assets/styles/styles.scss" />
-        <option value="$PROJECT_DIR$/src/components/MailboxInbox.js" />
         <option value="$PROJECT_DIR$/src/components/App.js" />
-        <option value="$PROJECT_DIR$/src/assets/styles/modules/_mailbox-inbox.scss" />
         <option value="$PROJECT_DIR$/src/data/mailboxItems.js" />
+        <option value="$PROJECT_DIR$/src/assets/styles/base/_variables.scss" />
+        <option value="$PROJECT_DIR$/src/components/MailboxInbox.js" />
+        <option value="$PROJECT_DIR$/src/assets/styles/modules/_mailbox-inbox.scss" />
+        <option value="$PROJECT_DIR$/src/components/MailboxCompose.js" />
+        <option value="$PROJECT_DIR$/src/assets/styles/modules/_todo-list.scss" />
+        <option value="$PROJECT_DIR$/src/assets/styles/base/_global.scss" />
+        <option value="$PROJECT_DIR$/src/components/MailboxComposeInner.js" />
+        <option value="$PROJECT_DIR$/src/assets/styles/modules/_mailbox-compose.scss" />
+        <option value="$PROJECT_DIR$/src/components/MailboxMail.js" />
       </list>
     </option>
   </component>
@@ -239,8 +200,8 @@
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="229" />
-    <option name="y" value="340" />
+    <option name="x" value="140" />
+    <option name="y" value="181" />
     <option name="width" value="1300" />
     <option name="height" value="731" />
   </component>
@@ -425,15 +386,15 @@
       <option name="presentableId" value="Default" />
       <updated>1515695439021</updated>
       <workItem from="1515695441000" duration="219000" />
-      <workItem from="1515695667704" duration="85119000" />
+      <workItem from="1515695667704" duration="95682000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="85338000" />
+    <option name="totallyTimeSpent" value="95901000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="229" y="340" width="1300" height="731" extended-state="0" />
+    <frame x="140" y="181" width="1300" height="731" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23612197" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -444,7 +405,7 @@
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3360522" sideWeight="0.49710503" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3360522" sideWeight="0.49710503" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -468,14 +429,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/components/Fonts.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Pricing.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -577,14 +530,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/assets/styles/modules/_card.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="2" lean-forward="false" selection-start-line="13" selection-start-column="2" selection-end-line="25" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/assets/styles/modules/_gallery.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -597,41 +542,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="140">
           <caret line="36" column="6" lean-forward="true" selection-start-line="36" selection-start-column="6" selection-end-line="36" selection-end-column="6" />
-          <folding>
-            <element signature="e#0#41#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/TodoAdd.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="18" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding>
-            <marker date="1515859221000" expanded="true" signature="2002:3219" ph="..." />
-            <marker date="1515859221000" expanded="true" signature="2130:3196" ph="..." />
-            <marker date="1515859221000" expanded="true" signature="2166:2403" ph="..." />
-            <marker date="1515859221000" expanded="true" signature="2468:3117" ph="..." />
-            <marker date="1515859221000" expanded="true" signature="2509:2668" ph="..." />
-            <marker date="1515859221000" expanded="false" signature="2698:2704" ph=" " />
-            <marker date="1515859221000" expanded="false" signature="2708:2714" ph=" " />
-            <marker date="1515859221000" expanded="true" signature="2754:3086" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/assets/styles/base/_global.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="131">
-          <caret line="89" column="0" lean-forward="true" selection-start-line="89" selection-start-column="0" selection-end-line="89" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/ChatBody.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="235">
-          <caret line="19" column="42" lean-forward="true" selection-start-line="19" selection-start-column="42" selection-end-line="19" selection-end-column="42" />
           <folding>
             <element signature="e#0#41#0" expanded="false" />
           </folding>
@@ -655,14 +565,6 @@
           <folding>
             <element signature="e#0#41#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/ChatMessage.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="26">
-          <caret line="8" column="75" lean-forward="false" selection-start-line="8" selection-start-column="75" selection-end-line="8" selection-end-column="75" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -694,34 +596,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/assets/styles/modules/_chat.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="166">
-          <caret line="23" column="35" lean-forward="false" selection-start-line="23" selection-start-column="35" selection-end-line="23" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/assets/styles/modules/_todo-list.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-454">
-          <caret line="0" column="12" lean-forward="false" selection-start-line="0" selection-start-column="12" selection-end-line="0" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/assets/styles/modules/_blog-side.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="3" column="22" lean-forward="false" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/assets/styles/base/_variables.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="37" lean-forward="false" selection-start-line="14" selection-start-column="37" selection-end-line="14" selection-end-column="37" />
           <folding />
         </state>
       </provider>
@@ -731,7 +609,7 @@
         <state relative-caret-position="3165">
           <caret line="206" column="32" lean-forward="false" selection-start-line="206" selection-start-column="32" selection-end-line="206" selection-end-column="32" />
           <folding>
-            <element signature="e#0#55#0" expanded="true" />
+            <element signature="e#0#55#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -802,30 +680,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/MailboxCompose.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="30" lean-forward="true" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/assets/styles/modules/_mailbox-compose.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/assets/styles/styles.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="31" lean-forward="false" selection-start-line="19" selection-start-column="31" selection-end-line="19" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/assets/styles/modules/_mailbox-mail.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -849,16 +703,8 @@
         <state relative-caret-position="510">
           <caret line="34" column="84" lean-forward="false" selection-start-line="34" selection-start-column="84" selection-end-line="34" selection-end-column="84" />
           <folding>
-            <element signature="e#0#41#0" expanded="true" />
+            <element signature="e#0#41#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/MailboxMail.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="26" lean-forward="true" selection-start-line="0" selection-start-column="26" selection-end-line="0" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -870,6 +716,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/data/mailboxItems.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-71">
+          <caret line="35" column="25" lean-forward="false" selection-start-line="35" selection-start-column="25" selection-end-line="35" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#56#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/MailboxItem.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -878,18 +734,44 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/assets/styles/modules/_card.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="13" lean-forward="true" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/assets/styles/modules/_sidebar.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-755">
+        <state relative-caret-position="-35">
           <caret line="5" column="16" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/data/blogPosts.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-318">
+          <caret line="11" column="19" lean-forward="true" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#58#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/assets/styles/base/_variables.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/MailboxInbox.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="14" column="12" lean-forward="true" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
+        <state relative-caret-position="175">
+          <caret line="43" column="84" lean-forward="false" selection-start-line="43" selection-start-column="77" selection-end-line="43" selection-end-column="84" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
@@ -898,29 +780,110 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/assets/styles/modules/_mailbox-inbox.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="53" column="36" lean-forward="false" selection-start-line="53" selection-start-column="36" selection-end-line="53" selection-end-column="36" />
+        <state relative-caret-position="170">
+          <caret line="38" column="9" lean-forward="false" selection-start-line="38" selection-start-column="9" selection-end-line="38" selection-end-column="9" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/data/blogPosts.js">
+    <entry file="file://$PROJECT_DIR$/src/components/ChatBody.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-435">
-          <caret line="11" column="19" lean-forward="true" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
+        <state relative-caret-position="-109">
+          <caret line="19" column="42" lean-forward="true" selection-start-line="19" selection-start-column="42" selection-end-line="19" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/assets/styles/modules/_chat.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-526">
+          <caret line="46" column="9" lean-forward="false" selection-start-line="46" selection-start-column="5" selection-end-line="46" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/assets/styles/styles.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="31" lean-forward="false" selection-start-line="19" selection-start-column="31" selection-end-line="19" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/ChatMessage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="8" column="75" lean-forward="false" selection-start-line="8" selection-start-column="75" selection-end-line="8" selection-end-column="75" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/TodoAdd.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-814">
+          <caret line="2" column="18" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
           <folding>
-            <element signature="e#0#58#0" expanded="true" />
+            <marker date="1515859221000" expanded="true" signature="2002:3219" ph="..." />
+            <marker date="1515859221000" expanded="true" signature="2130:3196" ph="..." />
+            <marker date="1515859221000" expanded="true" signature="2166:2403" ph="..." />
+            <marker date="1515859221000" expanded="true" signature="2468:3117" ph="..." />
+            <marker date="1515859221000" expanded="true" signature="2509:2668" ph="..." />
+            <marker date="1515859221000" expanded="false" signature="2698:2704" ph=" " />
+            <marker date="1515859221000" expanded="false" signature="2708:2714" ph=" " />
+            <marker date="1515859221000" expanded="true" signature="2754:3086" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/data/mailboxItems.js">
+    <entry file="file://$PROJECT_DIR$/src/assets/styles/modules/_todo-list.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="35" column="25" lean-forward="false" selection-start-line="35" selection-start-column="25" selection-end-line="35" selection-end-column="25" />
+        <state relative-caret-position="423">
+          <caret line="133" column="20" lean-forward="false" selection-start-line="133" selection-start-column="20" selection-end-line="133" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/assets/styles/base/_global.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="311">
+          <caret line="149" column="45" lean-forward="false" selection-start-line="149" selection-start-column="45" selection-end-line="149" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/MailboxComposeInner.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="305">
+          <caret line="29" column="73" lean-forward="false" selection-start-line="29" selection-start-column="73" selection-end-line="29" selection-end-column="73" />
           <folding>
-            <element signature="e#0#56#0" expanded="true" />
+            <element signature="e#0#26#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/assets/styles/modules/_mailbox-compose.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="206">
+          <caret line="39" column="18" lean-forward="false" selection-start-line="39" selection-start-column="18" selection-end-line="39" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/MailboxCompose.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="990">
+          <caret line="66" column="54" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="76" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/MailboxMail.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="98" lean-forward="false" selection-start-line="1" selection-start-column="98" selection-end-line="1" selection-end-column="98" />
+          <folding />
         </state>
       </provider>
     </entry>

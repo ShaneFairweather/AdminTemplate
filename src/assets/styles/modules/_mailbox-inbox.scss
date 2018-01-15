@@ -3,12 +3,105 @@
     background-color: $card;
     &__avatar {
       img {
-        height: 3rem;
-        width: 3rem;
+        height: 4rem;
+        width: 4rem;
+        margin-right: 1rem;
       }
     }
     &__info {
       display: flex;
+    }
+    &__name {
+      font-weight: 300;
+    }
+    &__subtitle {
+      font-size: 1.2rem;
+      font-weight: 300;
+    }
+  }
+  &__icons {
+    display: flex;
+    justify-content: space-between;
+    &__compose {
+      margin-right: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-width: 40px;
+      a {
+        text-decoration: none;
+        color: white;
+        &:hover {
+          text-decoration: none;
+          color: white;
+        }
+      }
+      i {
+        background-color: $light-blue;
+        border-radius: 20%;
+        position: relative;
+        &:hover {
+          transition: all .1s ease-in-out;
+          background-color: $light-blue--hover;
+        }
+        &:last-child {
+          padding: .7rem 1rem;
+        }
+      }
+    }
+    &__group {
+      margin-right: 10px;
+      display: flex;
+      i {
+        border: 1px solid rgba(255,255,255,.3);
+        padding: .7rem 1rem;
+        flex: 1 1 0;
+        min-width: 40px;
+        display: flex;
+        justify-content: center;
+        &:first-child {
+          border-radius: 6px 0 0 6px;
+        }
+        &:not(:last-child) {
+          border-right: none;
+        }
+        &:last-child {
+          border-radius: 0 6px 6px 0;
+          padding: .7rem 1rem;
+        }
+        &:hover {
+          transition: all .1s ease-in-out;
+          background-color: rgba(255,255,255,.3);
+        }
+      }
+    }
+    &__back {
+      margin-right: 10px;
+      display: flex;
+      a {
+        text-decoration: none;
+        color: white;
+        &:hover {
+          text-decoration: none;
+          color: white;
+        }
+      }
+      i {
+        border: 1px solid rgba(255,255,255,.3);
+        padding: .7rem 1rem;
+        flex: 1 1 0;
+        min-width: 40px;
+        display: flex;
+        justify-content: center;
+        border-radius: 6px;
+        &:last-child {
+          padding: .7rem 1rem;
+        }
+        &:hover {
+          transition: all .1s ease-in-out;
+          background-color: rgba(255,255,255,.3);
+        }
+      }
     }
   }
   &__main {
@@ -19,6 +112,8 @@
     flex: 1;
     //display: flex;
     //align-items: center;
+    max-height: 530px;
+    overflow: auto;
   }
   &__item {
     display: flex;
