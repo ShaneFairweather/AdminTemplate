@@ -2,8 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const BlogPost = (props) => {
-    const { title, author, date, text, image, avatar } = props.post;
-    // console.log(props.post);
+    const { title, author, date, text, image } = props.post;
     if(props.full) {
         return (
             <div className="blog-post card">
@@ -45,9 +44,9 @@ const BlogPost = (props) => {
                         post: props.post
                     }
                 }}>
-                <div className="blog-post__image">
-                    <img className="img-reponsive" src={image} alt={title}/>
-                </div>
+                    <div className="blog-post__image">
+                        <img className="img-reponsive" src={image} alt={title}/>
+                    </div>
                 </Link>
                 <div className="blog-post__content">
                     <div className="blog-post__info">

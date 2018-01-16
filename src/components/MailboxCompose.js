@@ -1,19 +1,11 @@
 import React from 'react';
-import { Container, Row, Col, Form, FormGroup, Label, Button, Input, FormText } from 'reactstrap';
-import MailboxItem from './MailboxItem';
-import mailboxItems from '../data/mailboxItems';
+import { Container, Row, Col } from 'reactstrap';
 import MailboxComposeInner from './MailboxComposeInner';
 import You from '../assets/images/avatars/user-19.png';
 import { Link } from 'react-router-dom';
 
 
 const MailboxCompose = () => {
-    const renderMailboxItems = () => {
-        return mailboxItems.map((email) => {
-            return <MailboxItem key={email.id} email={email} />
-        })
-    };
-
     return (
         <Container fluid>
             <Row>

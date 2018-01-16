@@ -27,7 +27,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      min-width: 40px;
+      min-width: 41px;
       a {
         text-decoration: none;
         color: white;
@@ -121,6 +121,10 @@
     align-items: center;
     padding: 2rem;
     border-bottom: 1px solid $card-border;
+    cursor: pointer;
+    &:hover {
+      background-color: $highlight;
+    }
     &__main {
       display: flex;
       align-items: center;
@@ -140,6 +144,11 @@
     }
     &__header {
       font-size: 1.2rem;
+      font-weight: 300;
+      //color: $text-alt;
+    }
+    &__message {
+      font-size: 1.1rem;
       color: $text-alt;
     }
   }
@@ -163,6 +172,14 @@
       &:hover {
         background-color: $highlight;
       }
+    }
+  }
+  a {
+    color: white;
+    text-decoration: none;
+    &:hover {
+      color: white;
+      text-decoration: none;
     }
   }
 }

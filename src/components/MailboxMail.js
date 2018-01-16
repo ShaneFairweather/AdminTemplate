@@ -1,10 +1,13 @@
 import React from 'react';
-import { Container, Row, Col, Form, FormGroup, Label, Button, Input, FormText } from 'reactstrap';
+import { Container, Row, Col } from 'reactstrap';
 import You from '../assets/images/avatars/user-19.png';
 import { Link } from 'react-router-dom';
+import MailboxMailInner from "./MailboxMailInner";
+import mailboxItems from '../data/mailboxItems';
 
-
-const MailboxMail = () => {
+const MailboxMail = (props) => {
+    const messageId = props.match.params.id;
+    const activeMessage = mailboxItems.find(obj => obj.id == messageId);
 
     return (
         <Container fluid>
@@ -56,6 +59,7 @@ const MailboxMail = () => {
                                 <div className="inbox__sidebar__item">#business</div>
                             </div>
                             <div className="inbox__content">
+                                <MailboxMailInner message={activeMessage}/>
                             </div>
                         </div>
                     </div>

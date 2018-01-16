@@ -7,22 +7,33 @@ import MailboxInbox from './MailboxInbox';
 import MailboxCompose from './MailboxCompose';
 import MailboxMail from './MailboxMail';
 import Grid from './Grid';
+import Signin from './Signin';
 import Gallery from './Gallery';
 import TodoList from './TodoList';
 import Chat from './Chat';
+import Calendar from './Calendar';
 import BlogPosts from './BlogPosts';
 import BlogDetail from './BlogDetail';
+import Chartjs from './Chartjs';
 import { BrowserRouter, Route } from 'react-router-dom';
 import '../assets/styles/styles.css'
 
 class App extends Component {
+    state = {
+        sideMenuExpanded: true
+    };
+
+    toggleSideMenu = () => {
+        this.setState({sideMenuExpanded: !this.state.sideMenuExpanded})
+    };
+
     render() {
         return (
             <BrowserRouter>
                 <div className="App">
-                    <Header/>
+                    <Header toggleSideMenu={this.toggleSideMenu} sideMenuExpanded={this.state.sideMenuExpanded}/>
                     <div className="main">
-                        <Sidebar/>
+                        <Sidebar sideMenuExpanded={this.state.sideMenuExpanded}/>
                         <div className="content">
                             <div className="content__inner">
                                 <Route exact path="/" component={Dashboard} />
@@ -30,11 +41,14 @@ class App extends Component {
                                 <Route path="/gallery" component={Gallery} />
                                 <Route path="/todo-list" component={TodoList} />
                                 <Route path="/chat" component={Chat} />
+                                <Route path="/calendar" component={Calendar} />
                                 <Route exact path="/blog" component={BlogPosts} />
                                 <Route exact path="/blog/:id" component={BlogDetail} />
-                                <Route path="/mailbox/inbox" component={MailboxInbox} />
+                                <Route exact path="/mailbox/inbox" component={MailboxInbox} />
                                 <Route exact path="/mailbox/compose" component={MailboxCompose} />
-                                <Route exact path="/mailbox/mail" component={MailboxMail} />
+                                <Route exact path="/mailbox/mail/:id" component={MailboxMail} />
+                                <Route exact path="/charts/chart-js" component={Chartjs} />
+                                <Route exact path="/charts/morris-js" component={Chartjs} />
                             </div>
                             <Footer/>
                         </div>

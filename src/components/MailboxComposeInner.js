@@ -1,5 +1,6 @@
 import React from 'react';
-import { Container, Row, Col, Form, FormGroup, Label, Button, Input, FormText } from 'reactstrap';
+import { Form, FormGroup, Label, Input } from 'reactstrap';
+import TextEditor from './TextEditor';
 
 const MailboxComposeInner = () => {
     return (
@@ -24,13 +25,15 @@ const MailboxComposeInner = () => {
                     </FormGroup>
                 </Form>
             </div>
-            <div className="mailbox-compose__message">
-                <Form>
-                    <FormGroup>
-                        <Input className="mailbox-compose__message__input" type="textarea" name="text" id="exampleText" />
-                    </FormGroup>
-                </Form>
-            </div>
+            <TextEditor />
+            {/*<div className="mailbox-compose__message">*/}
+                {/*<Form>*/}
+                    {/*<FormGroup>*/}
+                        {/*/!*<TextEditor />*!/*/}
+                        {/*<Input className="mailbox-compose__message__input" type="textarea" name="text" id="exampleText" />*/}
+                    {/*</FormGroup>*/}
+                {/*</Form>*/}
+            {/*</div>*/}
             <div className="mailbox-compose__footer">
                 <div className="mailbox-compose__footer__button">
                     <button className="btn">Save</button>

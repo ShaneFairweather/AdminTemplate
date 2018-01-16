@@ -1,7 +1,3 @@
-import Claire from '../assets/images/avatars/user-17.png';
-import Timmy from '../assets/images/avatars/user-14.png';
-import Trevor from '../assets/images/avatars/user-11.png';
-import Juno from '../assets/images/avatars/user-10.png';
 import Nate from '../assets/images/avatars/user-3.png';
 import Mihael from '../assets/images/avatars/user-2.png';
 import Rollo from '../assets/images/avatars/user-8.png';

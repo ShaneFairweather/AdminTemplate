@@ -1,0 +1,44 @@
+.mailbox-mail {
+  display: flex;
+  flex-direction: column;
+  white-space: pre-wrap;
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid $card-border;
+    padding: 2rem;
+    align-items: center;
+    &__main {
+      display: flex;
+      align-items: center;
+    }
+  }
+  &__name {
+
+  }
+  &__avatar {
+    img {
+      height: 3.5rem;
+      width: 3.5rem;
+      margin-right: 1rem;
+    }
+  }
+  &__from {
+    font-size: 1.3rem;
+  }
+  &__email {
+    font-style: italic;
+  }
+  &__subject {
+    color: $text-alt;
+    font-size: 1.3rem;
+  }
+  &__time {
+    color: $text-alt;
+  }
+  &__body {
+    padding: 2rem;
+    flex: 1;
+    font-size: 1.3rem;
+  }
+}

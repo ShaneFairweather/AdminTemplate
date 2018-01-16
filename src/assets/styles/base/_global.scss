@@ -27,8 +27,38 @@ body {
   flex-direction: column;
   margin:auto;
   //background-color: #f7f7f8;
-  background-color: #2b3f54;
+  //background-color: #2b3f54;
   font-family: $font-family;
+  //background-image: linear-gradient(45deg,#33001b,#ff0084);
+  background-image: linear-gradient(45deg,#33001b, #8238ff);
+
+  *::-webkit-scrollbar {
+    width: .4em;
+    height: 1em;
+    //border-radius: 50%;
+  }
+
+  *::-webkit-scrollbar-track {
+    //-webkit-box-shadow: inset 0 0 6px rgba(234, 234, 234, 0.3);
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: rgba(255,255,255, .3);
+    outline: 1px solid rgba(255,255,255, .3);
+    border-radius: 10px;
+  }
+
+
+  ::-webkit-scrollbar:horizontal {
+    width: 1rem;
+    border-radius: 50%;
+  }
+
+  ::-webkit-scrollbar-thumb:horizontal{
+    //background: #000;
+    //border-radius: 10px;
+    width: 1rem;
+  }
 }
 
 .main {
@@ -83,33 +113,33 @@ body {
 }
 
 
-*::-webkit-scrollbar {
-  width: .4em;
-  height: 1em;
-  //border-radius: 50%;
-}
-
-*::-webkit-scrollbar-track {
-  //-webkit-box-shadow: inset 0 0 6px rgba(234, 234, 234, 0.3);
-}
-
-*::-webkit-scrollbar-thumb {
-  background-color: rgba(255,255,255, .3);
-  outline: 1px solid rgba(255,255,255, .3);
-  border-radius: 10px;
-}
-
-
-::-webkit-scrollbar:horizontal {
-  width: 1rem;
-  border-radius: 50%;
-}
-
-::-webkit-scrollbar-thumb:horizontal{
-  //background: #000;
-  //border-radius: 10px;
-  width: 1rem;
-}
+//*::-webkit-scrollbar {
+//  width: .4em;
+//  height: 1em;
+//  //border-radius: 50%;
+//}
+//
+//*::-webkit-scrollbar-track {
+//  //-webkit-box-shadow: inset 0 0 6px rgba(234, 234, 234, 0.3);
+//}
+//
+//*::-webkit-scrollbar-thumb {
+//  background-color: rgba(255,255,255, .3);
+//  outline: 1px solid rgba(255,255,255, .3);
+//  border-radius: 10px;
+//}
+//
+//
+//::-webkit-scrollbar:horizontal {
+//  width: 1rem;
+//  border-radius: 50%;
+//}
+//
+//::-webkit-scrollbar-thumb:horizontal{
+//  //background: #000;
+//  //border-radius: 10px;
+//  width: 1rem;
+//}
 
 
 .form-control {
@@ -158,4 +188,19 @@ body {
     border: 1px solid $light-blue !important;
     color: $light-blue;
   }
+}
+
+
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: $text-alt !important;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: $text-alt;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: $text-alt;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: $text-alt;
 }
