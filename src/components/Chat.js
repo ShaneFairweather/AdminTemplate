@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Container, Row } from 'reactstrap';
+import { Container, Row, Col } from 'reactstrap';
 import ChatBody from './ChatBody';
 import ChatContactsList from './ChatContactsList';
 import You from '../assets/images/avatars/user-19.png';
@@ -40,8 +40,12 @@ class Chat extends Component {
                 <div className="section-header">Chat</div>
                 <div className="chat">
                     <Row>
-                        <ChatContactsList contacts={contacts} selectActiveContact={this.selectActiveContact} />
-                        <ChatBody activeContact={this.state.activeContact} addPost={this.addPost}/>
+                        <Col xs="12" sm="12" md="4">
+                            <ChatContactsList contacts={contacts} selectActiveContact={this.selectActiveContact} />
+                        </Col>
+                        <Col xs="12" sm="12" md="8">
+                            <ChatBody activeContact={this.state.activeContact} addPost={this.addPost}/>
+                        </Col>
                     </Row>
                 </div>
             </Container>

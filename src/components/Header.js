@@ -1,5 +1,7 @@
 import React from 'react';
 import { FormGroup, Form, Input, Label } from 'reactstrap';
+import { Link } from 'react-router-dom';
+import ColorPicker from './ColorPicker';
 
 const Header = (props) => {
     const renderSideMenuToggle = () => props.sideMenuExpanded ? <i className="fa fa-outdent"/> : <i className="fa fa-indent"/>;
@@ -8,7 +10,7 @@ const Header = (props) => {
         <div className="header">
             <div className="header__main">
                 <div className="header__main__inner">
-                    <div className="header__brand">SK Admin</div>
+                    <div className="header__brand"><Link to="/">SK Admin</Link></div>
                     <div className="header__toggle" onClick={() => props.toggleSideMenu()}>
                         {/*<i className="fa fa-outdent"/>*/}
                         {renderSideMenuToggle()}
@@ -35,8 +37,9 @@ const Header = (props) => {
                     <div className="header__icon__count">4</div>
                 </div>
                 <div className="header__icon">
-                    <i className="fa fa-tint" />
+                    <i className="fa fa-paint-brush" />
                 </div>
+                <ColorPicker handleActiveColorChange={props.handleActiveColorChange} />
             </div>
         </div>
     )

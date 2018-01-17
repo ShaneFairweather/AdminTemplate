@@ -16,44 +16,25 @@ import BlogPosts from './BlogPosts';
 import BlogDetail from './BlogDetail';
 import Chartjs from './Chartjs';
 import Rechart from './Rechart';
-import Pricing from './Pricing';
+import ComingSoon from './ComingSoon';
 import { BrowserRouter, Route, HashRouter } from 'react-router-dom';
 import '../assets/styles/styles.css'
 
-const colors = {
-    "blue": "linear-gradient(65deg, #0f0833, #1f78ff)",
-    "purple": "linear-gradient(65deg, #33001b, #8238ff)",
-    "aqua": "linear-gradient(65deg, #13547a, #80d0c7)",
-    "peach": "linear-gradient(65deg, #de6262, #ffb88c)",
-    "gray": "linear-gradient(45deg, #2c3e50, #bdc3c7)"
-};
-
-class App extends Component {
+class AdminPanel extends Component {
     state = {
-        sideMenuExpanded: true,
-        activeColor: "aqua"
+        sideMenuExpanded: true
     };
 
     toggleSideMenu = () => {
         this.setState({sideMenuExpanded: !this.state.sideMenuExpanded})
     };
 
-    handleActiveColorChange = (color) => {
-        // console.log(color)
-        this.setState({
-            activeColor: color
-        }, console.log(this.state.activeColor))
-    };
-
     render() {
         return (
             <BrowserRouter>
-                <div className="App" style={{background: colors[this.state.activeColor]}}>
-                    <Header
-                        toggleSideMenu={this.toggleSideMenu}
-                        sideMenuExpanded={this.state.sideMenuExpanded}
-                        handleActiveColorChange={this.handleActiveColorChange}
-                    />
+                <div className="admin-panel">
+                    <Route path="/coming-soon" component={ComingSoon} />
+                    <Header toggleSideMenu={this.toggleSideMenu} sideMenuExpanded={this.state.sideMenuExpanded}/>
                     <div className="main">
                         <Sidebar sideMenuExpanded={this.state.sideMenuExpanded}/>
                         <div className="content">
@@ -70,7 +51,6 @@ class App extends Component {
                                 <Route exact path="/mailbox/mail/:id" component={MailboxMail} />
                                 <Route exact path="/charts/chart-js" component={Chartjs} />
                                 <Route exact path="/charts/recharts" component={Rechart} />
-                                <Route exact path="/pricing-tables" component={Pricing} />
                             </div>
                             <Footer/>
                         </div>
@@ -81,4 +61,4 @@ class App extends Component {
     }
 }
 
-export default App;
+export default AdminPanel;

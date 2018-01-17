@@ -1,0 +1,20 @@
+.quick-stat {
+  display: flex;
+  flex-direction: row !important;
+  justify-content: space-between;
+  color: white;
+  padding: 2rem;
+  font-weight: 300;
+  margin-bottom: 2rem;
+  &__info {
+    display: flex;
+    flex-direction: column;
+  }
+  &__number {
+    font-size: 1.7rem;
+  }
+  &__text {
+    color: $text-alt;
+    font-size: 1.2rem;
+  }
+}

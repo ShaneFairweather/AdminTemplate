@@ -10,19 +10,17 @@ const ChatContactsList = (props) => {
     };
 
     return (
-        <Col xs="12" sm="12" md="4">
-            <div className="chat__contacts card">
-                <div className="chat__header card__header">
-                    <div className="chat__title">Contacts</div>
-                    <div className="card__icons">
-                        <i className="fa fa-plus" />
-                    </div>
-                </div>
-                <div className="chat__list">
-                    {renderContacts()}
+        <div className="chat__contacts card">
+            <div className="chat__header card__header">
+                <div className="chat__title">Contacts</div>
+                <div className="card__icons">
+                    <i className="fa fa-plus" />
                 </div>
             </div>
-        </Col>
+            <div className="chat__list">
+                {renderContacts()}
+            </div>
+        </div>
     )
 };
 

@@ -1,0 +1,32 @@
+.color-picker {
+  position: absolute;
+  right: 0;
+  top: 7rem;
+  background-color: black;
+  padding: 1rem;
+  z-index: 10000;
+  &__option {
+    height: 75px;
+    width: 100px;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    &--purple {
+      background: linear-gradient(45deg,#33001b, #8238ff);
+    }
+    &--aqua {
+      background: linear-gradient(45deg,#13547a, #80d0c7);
+    }
+    &--peach {
+      background: linear-gradient(45deg,#de6262, #ffb88c);
+    }
+    &--gray {
+      background: linear-gradient(45deg,#2c3e50, #bdc3c7);
+    }
+    &--blue {
+      background-image: linear-gradient(65deg, #0f0833, #1f78ff);
+    }
+  }
+}

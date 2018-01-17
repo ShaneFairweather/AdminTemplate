@@ -24,7 +24,7 @@ body {
   flex-direction: column;
   margin: auto;
   font-family: "Roboto", sans-serif;
-  background-image: linear-gradient(45deg, #33001b, #8238ff); }
+  background-image: linear-gradient(65deg, #0f0833, #1f78ff); }
   .App *::-webkit-scrollbar {
     width: .4em;
     height: 1em; }
@@ -37,6 +37,11 @@ body {
     border-radius: 50%; }
   .App ::-webkit-scrollbar-thumb:horizontal {
     width: 1rem; }
+
+.admin-panel {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column; }
 
 .main {
   flex: 1;
@@ -156,6 +161,12 @@ body {
     font-size: 2.5rem;
     color: white;
     font-weight: 200; }
+    .header__brand a {
+      color: white;
+      text-decoration: none; }
+      .header__brand a:hover {
+        color: white;
+        text-decoration: none; }
   .header__toggle {
     cursor: pointer; }
     .header__toggle i {
@@ -319,7 +330,6 @@ body {
   .gallery__images .row > * {
     padding: 0;
     margin: 0; }
-
 .gallery__image-container {
   height: 100%;
   border: 4px solid transparent;
@@ -349,139 +359,127 @@ body {
       position: absolute;
       font-size: 3rem; }
 
-.todo-list__item {
-  display: flex;
-  justify-content: space-between;
-  padding: 2rem;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.3); }
-
-.todo-list__content {
-  display: flex;
-  color: white;
-  align-items: center;
-  font-size: 1.2rem;
-  font-weight: 300;
-  cursor: pointer; }
-
-.todo-list__time {
-  color: rgba(255, 255, 255, 0.7); }
-
-.todo-list__checkbox {
-  height: 2.5rem;
-  width: 2.5rem;
-  border: 2px solid white;
-  border-radius: 50%;
-  margin-right: 1rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: .2rem .3rem; }
-  .todo-list__checkbox i {
-    opacity: 0;
-    font-size: 2.7rem; }
-
-.todo-list__controls {
-  color: white;
-  position: relative;
-  cursor: pointer;
-  font-size: 1.5rem; }
-
-.todo-list__menu {
-  position: absolute;
-  background-color: black;
-  font-size: 1.2rem;
-  font-weight: 200;
-  color: rgba(255, 255, 255, 0.7);
-  padding: 1rem 0;
-  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.5);
-  width: 120px;
-  right: 1rem;
-  top: 10%;
-  opacity: 0;
-  z-index: 200; }
-  .todo-list__menu div {
-    cursor: pointer;
-    padding: .3rem 1rem; }
-    .todo-list__menu div:hover {
-      background-color: #202020; }
-
-.todo-list .visible {
-  opacity: 1; }
-
-.todo-list .completed--text {
-  text-decoration: line-through; }
-
-.todo-list .completed--checkbox i {
-  opacity: 1; }
-
-.todo-list__add {
-  color: white;
-  padding: 2rem;
-  font-weight: 300; }
-  .todo-list__add__header {
-    font-size: 1.8rem;
-    margin-bottom: 2rem; }
-
-.todo-list__textarea {
-  background-color: rgba(0, 0, 0, 0.1) !important;
-  border: none !important;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.7) !important;
-  color: white !important; }
-  .todo-list__textarea:focus {
-    box-shadow: none !important;
-    border-bottom: 1px solid #4387E7 !important; }
-
-.todo-list__time-select {
-  display: flex;
-  align-items: center;
-  color: white;
-  font-size: 1.4rem; }
-  .todo-list__time-select input {
-    border-radius: 2px;
-    box-shadow: none;
-    background-color: rgba(0, 0, 0, 0.1);
+.todo-list {
+  margin-bottom: 2rem; }
+  .todo-list__item {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3); }
+  .todo-list__content {
+    display: flex;
     color: white;
-    width: 100%;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: 300;
+    cursor: pointer; }
+  .todo-list__time {
+    color: rgba(255, 255, 255, 0.7); }
+  .todo-list__checkbox {
+    height: 2.5rem;
+    width: 2.5rem;
+    border: 2px solid white;
+    border-radius: 50%;
+    margin-right: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .2rem .3rem; }
+    .todo-list__checkbox i {
+      opacity: 0;
+      font-size: 2.7rem; }
+  .todo-list__controls {
+    color: white;
     position: relative;
-    display: inline-block;
-    padding: 4px 7px;
-    height: 28px;
-    cursor: text;
-    font-size: 12px;
-    line-height: 1.5;
-    background-image: none;
+    cursor: pointer;
+    font-size: 1.5rem; }
+  .todo-list__menu {
+    position: absolute;
+    background-color: black;
+    font-size: 1.2rem;
+    font-weight: 200;
+    color: rgba(255, 255, 255, 0.7);
+    padding: 1rem 0;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.5);
+    width: 120px;
+    right: 1rem;
+    top: 10%;
+    opacity: 0;
+    z-index: 200; }
+    .todo-list__menu div {
+      cursor: pointer;
+      padding: .3rem 1rem; }
+      .todo-list__menu div:hover {
+        background-color: #202020; }
+  .todo-list .visible {
+    opacity: 1; }
+  .todo-list .completed--text {
+    text-decoration: line-through; }
+  .todo-list .completed--checkbox i {
+    opacity: 1; }
+  .todo-list__add {
+    color: white;
+    padding: 2rem;
+    font-weight: 300; }
+    .todo-list__add__header {
+      font-size: 1.8rem;
+      margin-bottom: 2rem; }
+  .todo-list__textarea {
+    background-color: rgba(0, 0, 0, 0.1) !important;
     border: none !important;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.7) !important; }
-    .todo-list__time-select input:focus {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.7) !important;
+    color: white !important; }
+    .todo-list__textarea:focus {
       box-shadow: none !important;
       border-bottom: 1px solid #4387E7 !important; }
-
-.todo-list__submit {
-  margin-top: 1.5rem;
-  background-color: rgba(0, 0, 0, 0.3) !important;
-  padding: .6rem 1.4rem !important;
-  color: white;
-  font-size: 1.4rem !important;
-  font-weight: 300;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-  transition: all .2s ease-in-out;
-  cursor: pointer; }
-  .todo-list__submit:hover {
-    background-color: rgba(0, 0, 0, 0.1) !important;
-    transition: all .2s ease-in-out; }
+  .todo-list__time-select {
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 1.4rem; }
+    .todo-list__time-select input {
+      border-radius: 2px;
+      box-shadow: none;
+      background-color: rgba(0, 0, 0, 0.1);
+      color: white;
+      width: 100%;
+      position: relative;
+      display: inline-block;
+      padding: 4px 7px;
+      height: 28px;
+      cursor: text;
+      font-size: 12px;
+      line-height: 1.5;
+      background-image: none;
+      border: none !important;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.7) !important; }
+      .todo-list__time-select input:focus {
+        box-shadow: none !important;
+        border-bottom: 1px solid #4387E7 !important; }
+  .todo-list__submit {
+    margin-top: 1.5rem;
+    background-color: rgba(0, 0, 0, 0.3) !important;
+    padding: .6rem 1.4rem !important;
+    color: white;
+    font-size: 1.4rem !important;
+    font-weight: 300;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all .2s ease-in-out;
+    cursor: pointer; }
+    .todo-list__submit:hover {
+      background-color: rgba(0, 0, 0, 0.1) !important;
+      transition: all .2s ease-in-out; }
 
 .chat .row .col-md-4 {
   padding-right: 0; }
-
 .chat__list {
   overflow: hidden;
   overflow-y: auto; }
-
 .chat__contacts {
   height: 484px;
   overflow: hidden;
-  overflow-y: auto; }
-
+  overflow-y: auto;
+  margin-bottom: 2rem; }
 .chat__contact {
   padding: 2rem;
   display: flex;
@@ -505,16 +503,13 @@ body {
     color: white; }
   .chat__contact__status {
     color: rgba(255, 255, 255, 0.7); }
-
 .chat__body {
   padding: 2rem; }
-
 .chat__messages {
   justify-content: space-between;
   height: 320px;
   overflow: hidden;
   overflow-y: auto; }
-
 .chat__message {
   display: flex;
   padding: 1rem 0;
@@ -544,7 +539,6 @@ body {
     .chat__message__main--from-you {
       display: flex;
       flex-direction: row-reverse; }
-
 .chat__input {
   margin-top: 2rem;
   width: 100%;
@@ -633,7 +627,6 @@ body {
 .blog-side__header {
   font-weight: 300;
   font-size: 1.6rem; }
-
 .blog-side__post {
   display: flex;
   padding: 2rem;
@@ -642,22 +635,18 @@ body {
   background-color: rgba(0, 0, 0, 0.1); }
   .blog-side__post:hover {
     background-color: rgba(255, 255, 255, 0.0825); }
-
 .blog-side__avatar img {
   height: 4rem;
   width: 4rem;
   margin-right: 1rem; }
-
 .blog-side__content {
   display: flex;
   flex-direction: column;
   justify-content: center;
   font-weight: 200; }
-
 .blog-side__title {
   font-size: 1.4rem;
   font-weight: 300; }
-
 .blog-side__author {
   color: rgba(255, 255, 255, 0.7);
   font-size: 1.3rem; }
@@ -770,7 +759,6 @@ body {
   .inbox__header__subtitle {
     font-size: 1.2rem;
     font-weight: 300; }
-
 .inbox__icons {
   display: flex;
   justify-content: space-between; }
@@ -781,11 +769,11 @@ body {
     align-items: center;
     min-width: 41px; }
     .inbox__icons__compose a {
-      text-decoration: none;
-      color: white; }
+      color: white;
+      text-decoration: none; }
       .inbox__icons__compose a:hover {
-        text-decoration: none;
-        color: white; }
+        color: white;
+        text-decoration: none; }
     .inbox__icons__compose i {
       background-color: #4387E7;
       border-radius: 20%;
@@ -819,11 +807,11 @@ body {
     margin-right: 10px;
     display: flex; }
     .inbox__icons__back a {
-      text-decoration: none;
-      color: white; }
+      color: white;
+      text-decoration: none; }
       .inbox__icons__back a:hover {
-        text-decoration: none;
-        color: white; }
+        color: white;
+        text-decoration: none; }
     .inbox__icons__back i {
       border: 1px solid rgba(255, 255, 255, 0.3);
       padding: .7rem 1rem;
@@ -837,16 +825,13 @@ body {
       .inbox__icons__back i:hover {
         transition: all .1s ease-in-out;
         background-color: rgba(255, 255, 255, 0.3); }
-
 .inbox__main {
   display: flex;
   flex-direction: row; }
-
 .inbox__content {
   flex: 1;
   max-height: 530px;
   overflow: auto; }
-
 .inbox__item {
   display: flex;
   justify-content: space-between;
@@ -871,7 +856,6 @@ body {
   .inbox__item__message {
     font-size: 1.1rem;
     color: rgba(255, 255, 255, 0.7); }
-
 .inbox__sidebar {
   flex: 0 0 200px;
   background-color: rgba(0, 0, 0, 0.065);
@@ -888,7 +872,6 @@ body {
       margin-right: 1rem; }
     .inbox__sidebar__item:hover {
       background-color: rgba(255, 255, 255, 0.06); }
-
 .inbox a {
   color: white;
   text-decoration: none; }
@@ -940,3 +923,153 @@ body {
   font-size: 1.5rem;
   font-weight: 300;
   margin-bottom: 2rem; }
+
+.rechart-container {
+  height: 400px;
+  width: 100%; }
+
+.quick-stat {
+  display: flex;
+  flex-direction: row !important;
+  justify-content: space-between;
+  color: white;
+  padding: 2rem;
+  font-weight: 300;
+  margin-bottom: 2rem; }
+  .quick-stat__info {
+    display: flex;
+    flex-direction: column; }
+  .quick-stat__number {
+    font-size: 1.7rem; }
+  .quick-stat__text {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 1.2rem; }
+
+.countdown-panel {
+  background-color: #4387E7;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  max-width: 250px;
+  padding: 1rem 2rem;
+  justify-content: center;
+  margin: 1rem;
+  align-items: center;
+  border-radius: 6px; }
+  .countdown-panel__timer {
+    font-size: 4rem; }
+  .countdown-panel__label {
+    text-transform: none;
+    font-size: 1.6rem; }
+
+.coming-soon {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-transform: uppercase;
+  background-image: linear-gradient(65deg, #0f0833, #1f78ff); }
+  .coming-soon__header {
+    font-size: 3rem; }
+  .coming-soon__logo-main {
+    font-size: 9rem;
+    font-weight: 400;
+    pointer-events: none;
+    user-select: none; }
+  .coming-soon__logo-sub {
+    font-size: 2rem; }
+  .coming-soon__countdown {
+    display: flex;
+    justify-content: space-around;
+    text-transform: none; }
+
+.countdown {
+  display: flex;
+  justify-content: space-around;
+  text-transform: none; }
+
+.price-table {
+  color: white;
+  display: flex;
+  justify-content: center;
+  font-weight: 300;
+  margin-bottom: 2rem; }
+  .price-table__header {
+    background-color: rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem; }
+  .price-table__title {
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    margin-bottom: .8rem; }
+  .price-table__subtitle {
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 0.7); }
+  .price-table__body {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .price-table__body > * {
+      width: 100%; }
+  .price-table__price-info {
+    display: flex;
+    padding: 1rem;
+    justify-content: center; }
+  .price-table__price {
+    font-size: 4rem; }
+  .price-table__per {
+    font-size: 1.4rem;
+    position: relative;
+    top: 2.8rem;
+    left: .2rem; }
+  .price-table__feature {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem; }
+    .price-table__feature:not(:nth-of-type(2)) {
+      border-top: 1px solid rgba(255, 255, 255, 0.1); }
+  .price-table__footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    padding: 2rem; }
+  .price-table .dollar-sign {
+    font-size: 1.4rem;
+    position: relative;
+    top: 1.1rem;
+    right: .2rem; }
+
+.color-picker {
+  position: absolute;
+  right: 0;
+  top: 7rem;
+  background-color: black;
+  padding: 1rem;
+  z-index: 10000; }
+  .color-picker__option {
+    height: 75px;
+    width: 100px;
+    margin-bottom: 1rem;
+    cursor: pointer; }
+    .color-picker__option:last-child {
+      margin-bottom: 0; }
+    .color-picker__option--purple {
+      background: linear-gradient(45deg, #33001b, #8238ff); }
+    .color-picker__option--aqua {
+      background: linear-gradient(45deg, #13547a, #80d0c7); }
+    .color-picker__option--peach {
+      background: linear-gradient(45deg, #de6262, #ffb88c); }
+    .color-picker__option--gray {
+      background: linear-gradient(45deg, #2c3e50, #bdc3c7); }
+    .color-picker__option--blue {
+      background-image: linear-gradient(65deg, #0f0833, #1f78ff); }
+
+/*# sourceMappingURL=styles.css.map */

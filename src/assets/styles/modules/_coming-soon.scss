@@ -1,0 +1,34 @@
+.coming-soon {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-transform: uppercase;
+  background-image: linear-gradient(65deg, #0f0833, #1f78ff);
+  //background-image: linear-gradient(85deg, #a1c4fd, #4d84ff);
+  &__header {
+    font-size: 3rem;
+  }
+  &__logo-main {
+    font-size: 9rem;
+    font-weight: 400;
+    pointer-events: none;
+    user-select: none;
+  }
+  &__logo-sub {
+    font-size: 2rem;
+  }
+  &__countdown {
+    display: flex;
+    justify-content: space-around;
+    text-transform: none;
+  }
+}
+
+.countdown {
+  display: flex;
+  justify-content: space-around;
+  text-transform: none;
+}

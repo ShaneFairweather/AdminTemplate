@@ -35,7 +35,7 @@ const Sidebar = (props) => {
                         icon="fa fa-bar-chart"
                         listItems={[
                             {name: "Chart.js", link: "/charts/chart-js"},
-                            {name: "Morris.js", link: "/charts/morris-js"}
+                            {name: "Recharts.js", link: "/charts/recharts"}
                         ]}/>
                     <SidebarItem name="Todo List" link="/todo-list" icon="fa fa-check-square-o"/>
 
@@ -44,12 +44,7 @@ const Sidebar = (props) => {
                         name="Pages"
                         icon="fa fa-file"
                         listItems={[
-                            {name: "Login", link: "/pages/login"},
-                            {name: "Signup", link: "/pages/signup"},
-                            {name: "Pricing", link: "/pages/pricing/"},
-                            {name: "404", link: "/pages/404"},
-                            {name: "Lock Screen", link: "/pages/lock-screen"},
-                            {name: "Coming Soon", link: "/pages/coming-soon"}
+                            {name: "Pricing Tables", link: "/pricing-tables"}
                         ]}/>
                 </ul>
             </div>

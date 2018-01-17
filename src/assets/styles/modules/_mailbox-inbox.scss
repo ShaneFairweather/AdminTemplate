@@ -28,14 +28,7 @@
       justify-content: center;
       align-items: center;
       min-width: 41px;
-      a {
-        text-decoration: none;
-        color: white;
-        &:hover {
-          text-decoration: none;
-          color: white;
-        }
-      }
+      @include no-link-decoration;
       i {
         background-color: $light-blue;
         border-radius: 20%;
@@ -78,14 +71,7 @@
     &__back {
       margin-right: 10px;
       display: flex;
-      a {
-        text-decoration: none;
-        color: white;
-        &:hover {
-          text-decoration: none;
-          color: white;
-        }
-      }
+      @include no-link-decoration;
       i {
         border: 1px solid rgba(255,255,255,.3);
         padding: .7rem 1rem;
@@ -174,12 +160,5 @@
       }
     }
   }
-  a {
-    color: white;
-    text-decoration: none;
-    &:hover {
-      color: white;
-      text-decoration: none;
-    }
-  }
+  @include no-link-decoration;
 }
