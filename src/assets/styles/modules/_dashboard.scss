@@ -1,0 +1,11 @@
+.stat-row {
+  & > * {
+    display: flex;
+  }
+}
+
+.dashboard {
+  .chart-container {
+    margin-bottom: 1.5rem;
+  }
+}

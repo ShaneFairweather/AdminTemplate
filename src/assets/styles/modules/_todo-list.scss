@@ -46,24 +46,28 @@
     font-size: 1.2rem;
     font-weight: 200;
     color: $text-alt;
-    padding: 1rem 0;
     box-shadow: 0 4px 18px rgba(0,0,0,.5);
     width: 120px;
     right: 1rem;
     top: 10%;
-    opacity: 0;
     z-index: 200;
-    div {
-      cursor: pointer;
-      padding: .3rem 1rem;
+    &__inner {
+    }
+    &__item {
+
+      padding: 1rem 1rem .5rem;
+      &:last-child {
+        padding: .5rem 1rem 1rem;
+      }
       &:hover {
         background-color: #202020;
+        cursor: pointer;
       }
     }
   }
-  .visible {
-    opacity: 1;
-  }
+  //.visible {
+  //  display: block;
+  //}
   .completed {
     &--text {
       text-decoration: line-through;

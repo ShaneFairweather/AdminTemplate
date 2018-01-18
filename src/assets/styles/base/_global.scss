@@ -31,7 +31,8 @@ body {
   font-family: $font-family;
   //background-image: linear-gradient(45deg,#33001b,#ff0084);
   //background-image: linear-gradient(45deg,#33001b, #8238ff);
-  background-image: linear-gradient(65deg, #0f0833, #1f78ff);
+  //background-image: linear-gradient(65deg, #0f0833, #1f78ff);
+  background-image: linear-gradient(45deg, #c33764, #1d2671);
 
   *::-webkit-scrollbar {
     width: .4em;
@@ -79,6 +80,8 @@ body {
   padding-top: 2rem;
   display: flex;
   flex-direction: column;
+  max-width: 100%;
+  overflow: hidden;
   &__inner {
     flex: 1;
     padding: 2rem;

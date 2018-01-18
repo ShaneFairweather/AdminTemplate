@@ -20,25 +20,13 @@ class ChatBody extends Component {
         //console.log(this.state.message);
         if(e.key === 'Enter') {
            this.props.addPost(this.props.activeContact.name, this.state.message);
-           this.setState({message: ""}, this.scrollToBottom);
+           this.setState({message: ""});
         }
-    }
-
-    componentDidMount() {
-        this.scrollToBottom();
-    }
-
-    componentDidUpdate() {
-        this.scrollToBottom();
-    }
-
-    scrollToBottom() {
-        this.el.scrollIntoView({ behaviour: 'smooth' });
     }
 
     render() {
         return (
-            <div className="chat__main card">
+            <div className="card chat__main">
                 <div className="chat__header card__header">
                     <div className="chat__title">{this.props.activeContact.name}</div>
                     <div className="card__icons">
@@ -47,7 +35,7 @@ class ChatBody extends Component {
                         <i className="fa fa-cog"/>
                     </div>
                 </div>
-                <div className="chat__body" id="chat__body" ref={el => { this.el = el; }}>
+                <div className="chat__body" id="chat__body">
                     <div className="chat__messages">
                         {this.renderChatMessages()}
                     </div>

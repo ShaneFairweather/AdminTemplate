@@ -1,6 +1,7 @@
 import React from 'react';
 import { Col } from 'reactstrap';
 import ChatContact from './ChatContact';
+import mailboxItems from '../data/mailboxItems';
 
 const ChatContactsList = (props) => {
     const renderContacts = () => {

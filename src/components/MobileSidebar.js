@@ -3,20 +3,12 @@ import MainUser from '../assets/images/avatars/user-19.png';
 import SidebarItem from './SidebarItem';
 import SidebarDropdown from './SidebarDropdown';
 
-const Sidebar = (props) => {
-    if(props.sideMenuExpanded) {
+const MobileSidebar = (props) => {
+    // if(props.mobileMenuExpanded) {
+    const mobileMenuClass = props.mobileMenuExpanded ? "mobile-active" : "";
         return (
-            <div className="sidebar">
-                <div className="user">
-                    <div className="user__avatar">
-                        <img src={MainUser} alt="main user"/>
-                    </div>
-                    <div className="user__info">
-                        <div className="user__name">Coby Fleener</div>
-                        <div className="user__email">cfleener13@gmail.com</div>
-                    </div>
-                </div>
-                <ul className="sidebar__list">
+            <div className={"sidebar--mobile " + mobileMenuClass}>
+                <ul className="sidebar--mobile__list">
                     <SidebarItem name="Dashboard" link="/" icon="fa fa-tachometer"/>
                     <SidebarDropdown
                         name="Mailbox"
@@ -33,7 +25,7 @@ const Sidebar = (props) => {
                     <SidebarItem name="Charts" link="/charts" icon="fa fa-bar-chart"/>
                     <SidebarItem name="Todo List" link="/todo-list" icon="fa fa-check-square-o"/>
 
-                    {/*<li className="sidebar__item sidebar__item--dropdown"><i className="fa fa-cog" aria-hidden="true" />Components</li>*/}
+                    {/*<li className="sidebar--mobile__item sidebar__item--dropdown"><i className="fa fa-cog" aria-hidden="true" />Components</li>*/}
                     <SidebarDropdown
                         name="Pages"
                         icon="fa fa-file"
@@ -43,9 +35,10 @@ const Sidebar = (props) => {
                 </ul>
             </div>
         )
-    } else {
-        return <div></div>;
-    }
+    //}
+    // else {
+    //     return <div></div>;
+    // }
 };
 
-export default Sidebar;
+export default MobileSidebar;

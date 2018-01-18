@@ -119,4 +119,50 @@ const options = {
     }
 };
 
-export {donut, bar, line, pie, radar, options};
+
+const dashboardChartData = {
+    labels: ["March", "April", "May", "June", "July", "August", "September"],
+    datasets: [{
+        label: "2016",
+        fillColor: "rgba(255,255,255,255)",
+        strokeColor: "rgba(255,255,255,1)",
+        pointColor: "rgba(255,255,255,1)",
+        backgroundColor: "transparent",
+        "borderColor": [
+            "rgba(255,255,255, .8)",
+        ],
+        color: "red",
+        data: [20, 30, 50, 20, 40, 10, 60]
+    }, {
+        label: "2017",
+        fillColor: "rgba(0,0,0,0)",
+        strokeColor: "rgba(0,0,0,1)",
+        pointColor: "rgba(0,0,0,1)",
+        backgroundColor: "transparent",
+        "borderColor": [
+            "rgba(255,255,255, .5)",
+        ],
+        data: [60, 10, 40, 30, 70, 30, 20],
+        borderDash: [8,4],
+        bezierCurve : false
+    }],
+    bezierCurve: false
+};
+
+const dashboardChartOptions = {
+    scales: {
+        xAxes: [{
+            ticks: {
+                fontColor: "rgba(255,255,255,.8)"
+            }
+        }],
+        yAxes: [{
+            ticks: {
+                fontColor: "rgba(255,255,255,.8)",
+                beginAtZero: true
+            }
+        }],
+    }
+};
+
+export {donut, bar, line, pie, radar, dashboardChartData, dashboardChartOptions, options};

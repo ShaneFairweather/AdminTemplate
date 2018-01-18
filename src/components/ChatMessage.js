@@ -4,14 +4,15 @@ class ChatMessage extends Component {
     componentDidMount() {
         this.scrollToBottom();
     }
-
-    componentDidUpdate() {
-        this.scrollToBottom();
-    }
+    //
+    // componentDidUpdate() {
+    //     this.scrollToBottom();
+    // }
 
     scrollToBottom() {
         this.el.scrollIntoView({ behaviour: 'smooth' });
     }
+
     render() {
         const {avatar, message, author, time} = this.props.post;
         if (this.props.fromYou) {

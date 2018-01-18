@@ -14,7 +14,7 @@ import Chat from './Chat';
 import Calendar from './Calendar';
 import BlogPosts from './BlogPosts';
 import BlogDetail from './BlogDetail';
-import Chartjs from './Chartjs';
+import Chartjs from './Charts';
 import Rechart from './Rechart';
 import ComingSoon from './ComingSoon';
 import { BrowserRouter, Route, HashRouter } from 'react-router-dom';

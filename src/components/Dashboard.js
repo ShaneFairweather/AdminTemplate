@@ -1,17 +1,24 @@
 import React, { Component } from 'react';
 import { Container, Row, Col } from 'reactstrap';
-import { Doughnut, Bar, Line, Pie, Radar } from 'react-chartjs-2';
+import { Doughnut, Bar, Line, Pie, Radar, defaults } from 'react-chartjs-2';
 import moment from 'moment';
-import ChatBody from './ChatBody';
+
+import TodoList from './TodoList';
 import ChatContactsList from './ChatContactsList';
 import Countdown from './Countdown';
 import QuickStat from './QuickStat';
+import WeatherCard from './WeatherCard';
+
 import You from '../assets/images/avatars/user-19.png';
 import contacts from '../data/contacts';
 import { data1, data2, data3, data4 } from '../data/quickStatData';
+import { donut, bar, line, pie, radar, options, dashboardChartData, dashboardChartOptions } from '../data/chartjsData';
+import todoItems from '../data/todoData';
+import TodoListInner from "./TodoListInner";
+import CalendarInner from "./CalendarInner";
+
 const currentTime = Date.parse(new Date());
 const deadline = new Date(currentTime + 21 * 7 * 24 * 60 * 60 * 1000);
-
 
 class Dashboard extends Component {
     state = {
@@ -34,9 +41,9 @@ class Dashboard extends Component {
 
     render() {
         return (
-            <Container fluid>
+            <Container fluid className="dashboard">
                 <div className="section-header">Dashboard</div>
-                <Row>
+                <Row className="stat-row">
                     <Col xs="12" sm="12" md="6" lg="3">
                         <QuickStat
                             number={"743,239"}
@@ -68,14 +75,33 @@ class Dashboard extends Component {
                 </Row>
                 <Row>
                     <Col xs="12" sm="12" md="6">
+                        <div className="card chart-container">
+                            <div className="chart__header">Sales Statistics</div>
+                            <Line
+                                responsive
+                                legend={{
+                                    labels: {
+                                        fontColor: 'rgba(255,255,255,.8)'
+                                    }
+                                }}
+                                data={dashboardChartData}
+                                options={dashboardChartOptions}
+                            />
+                        </div>
                         <Countdown deadline={deadline}/>
                     </Col>
                     <Col xs="12" sm="12" md="6">
-                        {/*<ChatBody activeContact={this.state.activeContact} addPost={this.addPost}/>*/}
+                        <TodoListInner items={todoItems.slice(0, 5)} />
                     </Col>
                 </Row>
                 <Row>
-                    <ChatContactsList contacts={contacts}/>
+                    <Col xs="12" sm="12" md="5">
+                        <ChatContactsList contacts={contacts}/>
+                    </Col>
+                    <Col xs="12" sm="12" md="7">
+                        {/*<WeatherCard contacts={contacts}/>*/}
+                        <CalendarInner />
+                    </Col>
                 </Row>
             </Container>
         )

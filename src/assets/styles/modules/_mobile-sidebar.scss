@@ -1,12 +1,23 @@
-.sidebar {
-  background-color: rgba(0,0,0,.125);
-  display: none;
-  @include screen('md') {
-    flex: 0 0 250px;
-    display: block;
-  }
+.sidebar--mobile {
+  background-color: rgba(0,0,0,.9);
+  //display: none;
+  width: 250px;
+  overflow: hidden;
   color: white;
-  padding: 1.5rem;
+  position: absolute;
+  z-index: 15000;
+  height: 100%;
+  padding-top: 5rem;
+  top: 0;
+  left: -25rem;
+  transition: all .3s ease-in-out;
+  //padding: 1.5rem;
+  & * {
+    font-size: 2rem!important;
+  }
+  @include screen('md') {
+    display: none;
+  }
   &__brand {
     font-size: 1.9rem;
     text-align: center;
@@ -80,4 +91,13 @@
       }
     }
   }
+}
+
+.mobile-active {
+  //flex: 0 0 250px;
+  width: 100%;
+  //display: block;
+  //border: 2px solid red;
+  position: fixed;
+  transform: translateX(25rem);
 }
