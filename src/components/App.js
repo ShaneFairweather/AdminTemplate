@@ -1,24 +1,21 @@
 import React, { Component } from 'react';
-import Header from './Header';
-import Sidebar from './Sidebar';
+import Header from './header/Header';
+import Sidebar from './sidebar/Sidebar';
 import MobileSidebar from './MobileSidebar';
 import Footer from './Footer';
 import Dashboard from './Dashboard';
-import MailboxInbox from './MailboxInbox';
-import MailboxCompose from './MailboxCompose';
-import MailboxMail from './MailboxMail';
-import Grid from './Grid';
-import Signin from './Signin';
-import Gallery from './Gallery';
-import TodoList from './TodoList';
-import Chat from './Chat';
-import Calendar from './Calendar';
-import BlogPosts from './BlogPosts';
-import BlogDetail from './BlogDetail';
+import MailboxInbox from './mailbox/MailboxInbox';
+import MailboxCompose from './mailbox/MailboxCompose';
+import MailboxMail from './mailbox/MailboxMail';
+import Gallery from './gallery/Gallery';
+import TodoList from './todolist/TodoList';
+import Chat from './chat/Chat';
+import Calendar from './calendar/Calendar';
+import BlogPosts from './blog/BlogPosts';
+import BlogDetail from './blog/BlogDetail';
 import Charts from './Charts';
-import Rechart from './Rechart';
 import Pricing from './Pricing';
-import { BrowserRouter, Route, HashRouter } from 'react-router-dom';
+import { BrowserRouter, Route } from 'react-router-dom';
 import '../assets/styles/styles.css'
 
 const colors = {
@@ -46,12 +43,12 @@ class App extends Component {
         this.setState({mobileMenuExpanded: !this.state.mobileMenuExpanded})
     };
 
-    hideMobileMenu = () => {
+    handleMobileItemSelect = () => {
+        console.log('test');
         this.setState({mobileMenuExpanded: false})
     };
 
     handleActiveColorChange = (color) => {
-        // console.log(color)
         this.setState({
             activeColor: color
         }, console.log(this.state.activeColor))
@@ -73,6 +70,7 @@ class App extends Component {
                         <MobileSidebar
                             mobileMenuExpanded={this.state.mobileMenuExpanded}
                             toggleMobileMenu={this.toggleMobileMenu}
+                            handleMobileItemSelect={this.handleMobileItemSelect}
                         />
                         <div className="content">
                             <div className="content__inner">

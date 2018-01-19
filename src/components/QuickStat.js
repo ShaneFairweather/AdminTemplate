@@ -1,8 +1,8 @@
 import React from 'react';
-import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend } from 'recharts';
+import { BarChart, Bar } from 'recharts';
 
 const QuickStat = (props) => {
-    const { number, text, data } = props;
+    const { data } = props;
     return (
         <div className="card quick-stat">
             <div className="quick-stat__info">

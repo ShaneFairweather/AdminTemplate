@@ -1,21 +1,19 @@
 import React, { Component } from 'react';
 import { Container, Row, Col } from 'reactstrap';
-import { Doughnut, Bar, Line, Pie, Radar, defaults } from 'react-chartjs-2';
+import { Line } from 'react-chartjs-2';
 import moment from 'moment';
 
-import TodoList from './TodoList';
-import ChatContactsList from './ChatContactsList';
-import Countdown from './Countdown';
+import ChatContactsList from './chat/ChatContactsList';
+import Countdown from './countdown/Countdown';
 import QuickStat from './QuickStat';
-import WeatherCard from './WeatherCard';
 
 import You from '../assets/images/avatars/user-19.png';
 import contacts from '../data/contacts';
 import { data1, data2, data3, data4 } from '../data/quickStatData';
-import { donut, bar, line, pie, radar, options, dashboardChartData, dashboardChartOptions } from '../data/chartjsData';
+import { dashboardChartData, dashboardChartOptions } from '../data/chartjsData';
 import todoItems from '../data/todoData';
-import TodoListInner from "./TodoListInner";
-import CalendarInner from "./CalendarInner";
+import TodoListInner from "./todolist/TodoListInner";
+import CalendarInner from "./calendar/CalendarInner";
 
 const currentTime = Date.parse(new Date());
 const deadline = new Date(currentTime + 21 * 7 * 24 * 60 * 60 * 1000);
@@ -99,7 +97,6 @@ class Dashboard extends Component {
                         <ChatContactsList contacts={contacts}/>
                     </Col>
                     <Col xs="12" sm="12" md="7">
-                        {/*<WeatherCard contacts={contacts}/>*/}
                         <CalendarInner />
                     </Col>
                 </Row>

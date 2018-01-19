@@ -1,6 +1,5 @@
 .sidebar--mobile {
   background-color: rgba(0,0,0,.9);
-  //display: none;
   width: 250px;
   overflow: hidden;
   color: white;
@@ -11,93 +10,16 @@
   top: 0;
   left: -25rem;
   transition: all .3s ease-in-out;
-  //padding: 1.5rem;
   & * {
     font-size: 2rem!important;
   }
   @include screen('md') {
     display: none;
   }
-  &__brand {
-    font-size: 1.9rem;
-    text-align: center;
-    font-weight: 100;
-    padding: 20px;
-  }
-  .user {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: $highlight;
-    padding: .3rem;
-    &__avatar {
-      img {
-        height: 4rem;
-      }
-    }
-    &__info {
-      font-size: 1.3rem;
-      padding: 1rem;
-    }
-    &__name {
-      font-weight: 400;
-    }
-    &__email {
-      font-weight: 100;
-      color: #cdcdcd;
-    }
-  }
-
-  &__list {
-    list-style: none;
-    padding-top: 1rem;
-  }
-  &__item {
-    position: relative;
-    a, &--dropdown {
-      padding: 1rem 1.4rem;
-      font-size: 1.4rem;
-      font-weight: 300;
-      display: block;
-      color: $text-alt;
-      cursor: pointer;
-      &:hover {
-        background-color: $highlight;
-        color: $text-alt;
-        text-decoration: none;
-      }
-      i {
-        margin-right: 1rem;
-      }
-    }
-  }
-  &__dropdown {
-    background-color: $card;
-    list-style: none;
-    position: relative;
-    &__item {
-      a {
-        display: block;
-        padding: 1rem 1rem 1rem 4rem;
-        font-size: 1.4rem;
-        font-weight: 300;
-        text-decoration: none;
-        color: $text-alt;
-        &:hover {
-          background-color: $highlight;
-          text-decoration: none;
-          color: $text-alt;
-        }
-      }
-    }
-  }
 }
 
 .mobile-active {
-  //flex: 0 0 250px;
   width: 100%;
-  //display: block;
-  //border: 2px solid red;
   position: fixed;
   transform: translateX(25rem);
 }

@@ -12,8 +12,10 @@
   }
   a {
     text-decoration: none;
+    color: $light-blue;
     &:hover {
       text-decoration: none;
+      color: #779eeb;
     }
   }
 }

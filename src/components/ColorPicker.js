@@ -22,7 +22,6 @@ class ColorPicker extends Component {
     };
 
     render() {
-        // const colorPickerVisible = this.props.isVisible ? "visible" : "";
         return (
             <div>
                 <div className="header__icon" onClick={() => this.toggleColorPicker()}>
