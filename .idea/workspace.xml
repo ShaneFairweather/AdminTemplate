@@ -2,79 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e01768e2-b0ef-4b95-ac5b-916cc94253f6" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/sidebar/SidebarItem.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/styles/modules/_chartjs.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/AdminPanel.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/BlogSingle.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/Buttons.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/ComingSoon.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/Dropdowns.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/Editor.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/Fonts.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/Forms.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/Maps.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/Panels.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/Rechart.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/SidebarItem.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/Signin.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/Tables.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/Tabs.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/Timeline.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/WeatherCard.js" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/components/BlogDetail.js" afterPath="$PROJECT_DIR$/src/components/blog/BlogDetail.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/components/BlogPost.js" afterPath="$PROJECT_DIR$/src/components/blog/BlogPost.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/components/BlogPosts.js" afterPath="$PROJECT_DIR$/src/components/blog/BlogPosts.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/components/BlogSidePost.js" afterPath="$PROJECT_DIR$/src/components/blog/BlogSidePost.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/components/BlogSidePosts.js" afterPath="$PROJECT_DIR$/src/components/blog/BlogSidePosts.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/components/Calendar.js" afterPath="$PROJECT_DIR$/src/components/calendar/Calendar.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/components/CalendarInner.js" afterPath="$PROJECT_DIR$/src/components/calendar/CalendarInner.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/components/Chat.js" afterPath="$PROJECT_DIR$/src/components/chat/Chat.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/components/ChatBody.js" afterPath="$PROJECT_DIR$/src/components/chat/ChatBody.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/components/ChatContact.js" afterPath="$PROJECT_DIR$/src/components/chat/ChatContact.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/components/ChatContactsList.js" afterPath="$PROJECT_DIR$/src/components/chat/ChatContactsList.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/components/ChatMessage.js" afterPath="$PROJECT_DIR$/src/components/chat/ChatMessage.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/components/Countdown.js" afterPath="$PROJECT_DIR$/src/components/countdown/Countdown.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/components/CountdownPanel.js" afterPath="$PROJECT_DIR$/src/components/countdown/CountdownPanel.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/components/Gallery.js" afterPath="$PROJECT_DIR$/src/components/gallery/Gallery.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/components/GalleryImage.js" afterPath="$PROJECT_DIR$/src/components/gallery/GalleryImage.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/components/Header.js" afterPath="$PROJECT_DIR$/src/components/header/Header.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/components/HeaderDropdown.js" afterPath="$PROJECT_DIR$/src/components/header/HeaderDropdown.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/components/HeaderDropdownItem.js" afterPath="$PROJECT_DIR$/src/components/header/HeaderDropdownItem.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/components/MailboxCompose.js" afterPath="$PROJECT_DIR$/src/components/mailbox/MailboxCompose.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/components/MailboxComposeInner.js" afterPath="$PROJECT_DIR$/src/components/mailbox/MailboxComposeInner.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/components/MailboxInbox.js" afterPath="$PROJECT_DIR$/src/components/mailbox/MailboxInbox.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/components/MailboxItem.js" afterPath="$PROJECT_DIR$/src/components/mailbox/MailboxItem.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/components/MailboxMail.js" afterPath="$PROJECT_DIR$/src/components/mailbox/MailboxMail.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/components/MailboxMailInner.js" afterPath="$PROJECT_DIR$/src/components/mailbox/MailboxMailInner.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/components/Sidebar.js" afterPath="$PROJECT_DIR$/src/components/sidebar/Sidebar.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/components/SidebarDropdown.js" afterPath="$PROJECT_DIR$/src/components/sidebar/SidebarDropdown.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/components/SidebarDropdownItem.js" afterPath="$PROJECT_DIR$/src/components/sidebar/SidebarDropdownItem.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/components/TodoAdd.js" afterPath="$PROJECT_DIR$/src/components/todolist/TodoAdd.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/components/TodoControls.js" afterPath="$PROJECT_DIR$/src/components/todolist/TodoControls.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/components/TodoItem.js" afterPath="$PROJECT_DIR$/src/components/todolist/TodoItem.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/components/TodoList.js" afterPath="$PROJECT_DIR$/src/components/todolist/TodoList.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/components/TodoListInner.js" afterPath="$PROJECT_DIR$/src/components/todolist/TodoListInner.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/ScrollToTop.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/assets/images/garden.jpg" afterPath="$PROJECT_DIR$/src/assets/images/garden.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/assets/styles/base/_variables.scss" afterPath="$PROJECT_DIR$/src/assets/styles/base/_variables.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/assets/styles/modules/_chart.scss" afterPath="$PROJECT_DIR$/src/assets/styles/modules/_chart.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/assets/styles/modules/_chat.scss" afterPath="$PROJECT_DIR$/src/assets/styles/modules/_chat.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/assets/styles/modules/_coming-soon.scss" afterPath="$PROJECT_DIR$/src/assets/styles/modules/_coming-soon.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/assets/styles/modules/_countdown-panel.scss" afterPath="$PROJECT_DIR$/src/assets/styles/modules/_countdown-panel.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/assets/styles/modules/_footer.scss" afterPath="$PROJECT_DIR$/src/assets/styles/modules/_footer.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/assets/styles/modules/_gallery.scss" afterPath="$PROJECT_DIR$/src/assets/styles/modules/_gallery.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/assets/styles/modules/_header.scss" afterPath="$PROJECT_DIR$/src/assets/styles/modules/_header.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/assets/styles/modules/_mailbox-compose.scss" afterPath="$PROJECT_DIR$/src/assets/styles/modules/_mailbox-compose.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/assets/styles/modules/_mailbox-inbox.scss" afterPath="$PROJECT_DIR$/src/assets/styles/modules/_mailbox-inbox.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/assets/styles/modules/_mobile-sidebar.scss" afterPath="$PROJECT_DIR$/src/assets/styles/modules/_mobile-sidebar.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/assets/styles/modules/_todo-list.scss" afterPath="$PROJECT_DIR$/src/assets/styles/modules/_todo-list.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/assets/styles/styles.css" afterPath="$PROJECT_DIR$/src/assets/styles/styles.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/assets/styles/styles.css.map" afterPath="$PROJECT_DIR$/src/assets/styles/styles.css.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/assets/styles/styles.scss" afterPath="$PROJECT_DIR$/src/assets/styles/styles.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/index.html" afterPath="$PROJECT_DIR$/public/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/App.js" afterPath="$PROJECT_DIR$/src/components/App.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/ColorPicker.js" afterPath="$PROJECT_DIR$/src/components/ColorPicker.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Dashboard.js" afterPath="$PROJECT_DIR$/src/components/Dashboard.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/MobileSidebar.js" afterPath="$PROJECT_DIR$/src/components/MobileSidebar.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/QuickStat.js" afterPath="$PROJECT_DIR$/src/components/QuickStat.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -92,21 +24,9 @@
         <entry file="file://$PROJECT_DIR$/src/components/App.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
-              <caret line="58" column="27" lean-forward="true" selection-start-line="58" selection-start-column="27" selection-end-line="58" selection-end-column="27" />
+              <caret line="50" column="0" lean-forward="true" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MobileSidebar.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/MobileSidebar.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="50" lean-forward="true" selection-start-line="8" selection-start-column="50" selection-end-line="8" selection-end-column="50" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -115,8 +35,8 @@
       <file leaf-file-name="SidebarItem.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/sidebar/SidebarItem.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="78" lean-forward="false" selection-start-line="6" selection-start-column="42" selection-end-line="6" selection-end-column="78" />
+            <state relative-caret-position="135">
+              <caret line="9" column="32" lean-forward="true" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -128,7 +48,7 @@
         <entry file="file://$PROJECT_DIR$/src/components/sidebar/SidebarDropdownItem.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="90">
-              <caret line="7" column="28" lean-forward="true" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
+              <caret line="7" column="28" lean-forward="false" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -138,7 +58,7 @@
         <entry file="file://$PROJECT_DIR$/src/components/header/Header.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="75">
-              <caret line="10" column="42" lean-forward="true" selection-start-line="10" selection-start-column="42" selection-end-line="10" selection-end-column="42" />
+              <caret line="10" column="42" lean-forward="false" selection-start-line="10" selection-start-column="42" selection-end-line="10" selection-end-column="42" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -160,18 +80,40 @@
         <entry file="file://$PROJECT_DIR$/src/assets/styles/modules/_header.scss">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="135">
-              <caret line="186" column="0" lean-forward="true" selection-start-line="186" selection-start-column="0" selection-end-line="186" selection-end-column="0" />
+              <caret line="186" column="0" lean-forward="false" selection-start-line="186" selection-start-column="0" selection-end-line="186" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_chat.scss" pinned="false" current-in-tab="true">
+      <file leaf-file-name="_chat.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/assets/styles/modules/_chat.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="279">
-              <caret line="43" column="18" lean-forward="true" selection-start-line="43" selection-start-column="18" selection-end-line="43" selection-end-column="18" />
+            <state relative-caret-position="189">
+              <caret line="43" column="18" lean-forward="false" selection-start-line="43" selection-start-column="18" selection-end-line="43" selection-end-column="18" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="27" column="25" lean-forward="true" selection-start-line="27" selection-start-column="25" selection-end-line="27" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ScrollToTop.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/components/ScrollToTop.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="1" column="46" lean-forward="false" selection-start-line="1" selection-start-column="46" selection-end-line="1" selection-end-column="46" />
+              <folding>
+                <element signature="e#0#41#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -237,9 +179,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/assets/styles/modules/_quick-stat.scss" />
-        <option value="$PROJECT_DIR$/src/assets/styles/modules/_color-picker.scss" />
-        <option value="$PROJECT_DIR$/src/assets/styles/modules/_dashboard.scss" />
         <option value="$PROJECT_DIR$/src/components/WeatherCard.js" />
         <option value="$PROJECT_DIR$/src/data/chartjsData.js" />
         <option value="$PROJECT_DIR$/src/assets/styles/base/_mixins.scss" />
@@ -281,13 +220,16 @@
         <option value="$PROJECT_DIR$/src/components/TodoItem.js" />
         <option value="$PROJECT_DIR$/src/components/TodoList.js" />
         <option value="$PROJECT_DIR$/src/components/TodoListInner.js" />
-        <option value="$PROJECT_DIR$/src/components/App.js" />
         <option value="$PROJECT_DIR$/src/components/MobileSidebar.js" />
         <option value="$PROJECT_DIR$/src/components/SidebarItem.js" />
         <option value="$PROJECT_DIR$/src/components/SidebarDropdown.js" />
         <option value="$PROJECT_DIR$/src/components/SidebarDropdownItem.js" />
         <option value="$PROJECT_DIR$/src/assets/styles/modules/_header.scss" />
         <option value="$PROJECT_DIR$/src/assets/styles/modules/_chat.scss" />
+        <option value="$PROJECT_DIR$/public/index.html" />
+        <option value="$PROJECT_DIR$/src/components/App.js" />
+        <option value="$PROJECT_DIR$/src/components/sidebar/SidebarItem.js" />
+        <option value="$PROJECT_DIR$/src/components/ScrollToTop.js" />
       </list>
     </option>
   </component>
@@ -309,8 +251,8 @@
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="24" />
-    <option name="y" value="109" />
+    <option name="x" value="168" />
+    <option name="y" value="107" />
     <option name="width" value="1323" />
     <option name="height" value="731" />
   </component>
@@ -396,6 +338,13 @@
               <item name="admin-panel" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="assets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="admin-panel" type="b2602c69:ProjectViewProjectNode" />
+              <item name="admin-panel" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="admin-panel" type="b2602c69:ProjectViewProjectNode" />
@@ -550,17 +499,18 @@
       <updated>1515695439021</updated>
       <workItem from="1515695441000" duration="219000" />
       <workItem from="1515695667704" duration="132276000" />
-      <workItem from="1516145932620" duration="64345000" />
+      <workItem from="1516145932620" duration="66475000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="196840000" />
+    <option name="totallyTimeSpent" value="198970000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="24" y="109" width="1323" height="731" extended-state="0" />
+    <frame x="168" y="107" width="1323" height="731" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23195085" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23195085" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32854864" sideWeight="0.50289494" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32952693" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -592,24 +542,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/components/chat/ChatBody.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-270">
-          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#41#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/chat/ChatContact.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="16" column="12" lean-forward="true" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/chat/ChatContactsList.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-75">
@@ -963,17 +895,7 @@
     <entry file="file://$PROJECT_DIR$/src/components/MobileSidebar.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
-          <caret line="8" column="50" lean-forward="true" selection-start-line="8" selection-start-column="50" selection-end-line="8" selection-end-column="50" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/sidebar/SidebarItem.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="78" lean-forward="false" selection-start-line="6" selection-start-column="42" selection-end-line="6" selection-end-column="78" />
+          <caret line="8" column="50" lean-forward="false" selection-start-line="8" selection-start-column="50" selection-end-line="8" selection-end-column="50" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
@@ -993,25 +915,15 @@
     <entry file="file://$PROJECT_DIR$/src/components/sidebar/SidebarDropdownItem.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
-          <caret line="7" column="28" lean-forward="true" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
+          <caret line="7" column="28" lean-forward="false" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/App.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="58" column="27" lean-forward="true" selection-start-line="58" selection-start-column="27" selection-end-line="58" selection-end-column="27" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/header/Header.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
-          <caret line="10" column="42" lean-forward="true" selection-start-line="10" selection-start-column="42" selection-end-line="10" selection-end-column="42" />
+          <caret line="10" column="42" lean-forward="false" selection-start-line="10" selection-start-column="42" selection-end-line="10" selection-end-column="42" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
@@ -1029,7 +941,7 @@
     <entry file="file://$PROJECT_DIR$/src/assets/styles/modules/_header.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
-          <caret line="186" column="0" lean-forward="true" selection-start-line="186" selection-start-column="0" selection-end-line="186" selection-end-column="0" />
+          <caret line="186" column="0" lean-forward="false" selection-start-line="186" selection-start-column="0" selection-end-line="186" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1044,9 +956,47 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/assets/styles/modules/_chat.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret line="43" column="18" lean-forward="true" selection-start-line="43" selection-start-column="18" selection-end-line="43" selection-end-column="18" />
+        <state relative-caret-position="189">
+          <caret line="43" column="18" lean-forward="false" selection-start-line="43" selection-start-column="18" selection-end-line="43" selection-end-column="18" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="27" column="25" lean-forward="true" selection-start-line="27" selection-start-column="25" selection-end-line="27" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="50" column="0" lean-forward="true" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/sidebar/SidebarItem.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="32" lean-forward="true" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/ScrollToTop.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="46" lean-forward="false" selection-start-line="1" selection-start-column="46" selection-end-line="1" selection-end-column="46" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

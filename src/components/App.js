@@ -15,6 +15,7 @@ import BlogPosts from './blog/BlogPosts';
 import BlogDetail from './blog/BlogDetail';
 import Charts from './Charts';
 import Pricing from './Pricing';
+import ScrollToTop from './ScrollToTop';
 import { BrowserRouter, Route } from 'react-router-dom';
 import '../assets/styles/styles.css'
 
@@ -57,40 +58,42 @@ class App extends Component {
     render() {
         return (
             <BrowserRouter>
-                <div className="App" style={{background: colors[this.state.activeColor]}}>
-                    <Header
-                        toggleSideMenu={this.toggleSideMenu}
-                        toggleMobileMenu={this.toggleMobileMenu}
-                        sideMenuExpanded={this.state.sideMenuExpanded}
-                        mobileMenuExpanded={this.state.mobileMenuExpanded}
-                        handleActiveColorChange={this.handleActiveColorChange}
-                    />
-                    <div className="main">
-                        <Sidebar sideMenuExpanded={this.state.sideMenuExpanded}/>
-                        <MobileSidebar
-                            mobileMenuExpanded={this.state.mobileMenuExpanded}
+                <ScrollToTop>
+                    <div className="App" style={{background: colors[this.state.activeColor]}}>
+                        <Header
+                            toggleSideMenu={this.toggleSideMenu}
                             toggleMobileMenu={this.toggleMobileMenu}
-                            handleMobileItemSelect={this.handleMobileItemSelect}
+                            sideMenuExpanded={this.state.sideMenuExpanded}
+                            mobileMenuExpanded={this.state.mobileMenuExpanded}
+                            handleActiveColorChange={this.handleActiveColorChange}
                         />
-                        <div className="content">
-                            <div className="content__inner">
-                                <Route exact path="/" component={Dashboard} />
-                                <Route path="/gallery" component={Gallery} />
-                                <Route path="/todo-list" component={TodoList} />
-                                <Route path="/chat" component={Chat} />
-                                <Route path="/calendar" component={Calendar} />
-                                <Route exact path="/blog" component={BlogPosts} />
-                                <Route exact path="/blog/:id" component={BlogDetail} />
-                                <Route exact path="/mailbox/inbox" component={MailboxInbox} />
-                                <Route exact path="/mailbox/compose" component={MailboxCompose} />
-                                <Route exact path="/mailbox/mail/:id" component={MailboxMail} />
-                                <Route exact path="/charts" component={Charts} />
-                                <Route exact path="/pricing-tables" component={Pricing} />
+                        <div className="main">
+                            <Sidebar sideMenuExpanded={this.state.sideMenuExpanded}/>
+                            <MobileSidebar
+                                mobileMenuExpanded={this.state.mobileMenuExpanded}
+                                toggleMobileMenu={this.toggleMobileMenu}
+                                handleMobileItemSelect={this.handleMobileItemSelect}
+                            />
+                            <div className="content">
+                                <div className="content__inner">
+                                    <Route exact path="/" component={Dashboard} />
+                                    <Route path="/gallery" component={Gallery} />
+                                    <Route path="/todo-list" component={TodoList} />
+                                    <Route path="/chat" component={Chat} />
+                                    <Route path="/calendar" component={Calendar} />
+                                    <Route exact path="/blog" component={BlogPosts} />
+                                    <Route exact path="/blog/:id" component={BlogDetail} />
+                                    <Route exact path="/mailbox/inbox" component={MailboxInbox} />
+                                    <Route exact path="/mailbox/compose" component={MailboxCompose} />
+                                    <Route exact path="/mailbox/mail/:id" component={MailboxMail} />
+                                    <Route exact path="/charts" component={Charts} />
+                                    <Route exact path="/pricing-tables" component={Pricing} />
+                                </div>
+                                <Footer/>
                             </div>
-                            <Footer/>
                         </div>
                     </div>
-                </div>
+                </ScrollToTop>
             </BrowserRouter>
         );
     }
