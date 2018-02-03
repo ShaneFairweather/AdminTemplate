@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="e01768e2-b0ef-4b95-ac5b-916cc94253f6" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/assets/styles/modules/_blog.scss" afterPath="$PROJECT_DIR$/src/assets/styles/modules/_blog.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/assets/styles/styles.css" afterPath="$PROJECT_DIR$/src/assets/styles/styles.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/assets/styles/styles.css.map" afterPath="$PROJECT_DIR$/src/assets/styles/styles.css.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -41,7 +39,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
@@ -51,14 +49,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SidebarItem.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/sidebar/SidebarItem.js">
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="9" column="32" lean-forward="false" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -174,7 +170,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/assets/styles/base/_mixins.scss" />
         <option value="$PROJECT_DIR$/src/assets/styles/base/_global.scss" />
         <option value="$PROJECT_DIR$/src/data/todoData.js" />
         <option value="$PROJECT_DIR$/node_modules/react-big-calendar/lib/css/react-big-calendar.css" />
@@ -225,6 +220,7 @@
         <option value="$PROJECT_DIR$/src/components/ScrollToTop.js" />
         <option value="$PROJECT_DIR$/package-lock.json" />
         <option value="$PROJECT_DIR$/src/assets/styles/modules/_blog.scss" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -498,12 +494,12 @@
       <workItem from="1516577812223" duration="26000" />
       <workItem from="1516732845390" duration="864000" />
       <workItem from="1516804867152" duration="4000" />
-      <workItem from="1517655260280" duration="319000" />
+      <workItem from="1517655260280" duration="659000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="201536000" />
+    <option name="totallyTimeSpent" value="201876000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="117" y="68" width="1323" height="731" extended-state="0" />
@@ -540,13 +536,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/components/Dashboard.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1485">
-          <caret line="99" column="0" lean-forward="false" selection-start-line="99" selection-start-column="0" selection-end-line="99" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Editor.js" />
     <entry file="file://$PROJECT_DIR$/src/components/Forms.js" />
     <entry file="file://$PROJECT_DIR$/src/components/Footer.js">
@@ -842,6 +831,14 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
